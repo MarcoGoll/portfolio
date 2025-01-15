@@ -1,5 +1,7 @@
-@mixin setContentLimit () {
-    width: 100%;
-    min-width: 300px;
-    max-width: 1440px;
+@mixin setFlex($fd: row, $jc: center, $ai: center, $gap: 0px) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
 }

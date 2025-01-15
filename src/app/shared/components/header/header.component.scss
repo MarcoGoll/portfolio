@@ -1,0 +1,26 @@
+@import './../../../../styles/mixin.global.scss';
+@import './../../../../styles/colors.global.scss';
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+
+    @include setFlex();
+}
+
+.headerContainer {
+    @include setFlex($jc: space-between);
+    background-color: aqua
+}
+
+nav {
+    @include setFlex($jc: space-between);
+    flex: 1;
+}
+
+.navLink {
+    color: $clrBaseBright;
+}

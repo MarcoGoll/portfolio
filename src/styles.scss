@@ -1,6 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-$clrYellow: yellow;
+@import './styles/mixin.global.scss';
+@import './styles/colors.global.scss';
 
-div {
-    background-color: $clrYellow;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.contentLimit {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1440px;
 }
