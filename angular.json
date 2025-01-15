@@ -31,7 +31,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/mixin.global.scss"
+              "src/styles/mixin.global.scss",
+              "src/styles/colors.global.scss",
+              "src/styles/fonts.global.scss"
             ],
             "scripts": []
           },
@@ -92,7 +94,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/mixin.global.scss"
+              "src/styles/mixin.global.scss",
+              "src/styles/colors.global.scss",
+              "src/styles/fonts.global.scss"
             ],
             "scripts": []
           }

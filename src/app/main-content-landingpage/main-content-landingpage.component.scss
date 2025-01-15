@@ -1,12 +1,11 @@
-@import url(./../../styles/mixin.global.scss);
-
-@mixin setContentLimit () {
-    width: 100%;
-    min-width: 300px;
-    max-width: 1440px;
-}
+@import './../../styles/mixin.global.scss';
+@import './../../styles/colors.global.scss';
+@import './../../styles/fonts.global.scss';
 
 div {
-    @include setContentLimit();
-    background-color: aqua;
+    @include setContentLimit(); // Ich kann das mixin nur wegen dem Import nutzen, 
+    //aber nich weil ich die mixin.global.scss global gemacht hab (ohne import gehts nicht)
+
+    //background-color: $clrYellow;  // Ich kann nicht auf die Variable
+    // $clrYellow aus der globalen styles zugreifen
 }
