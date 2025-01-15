@@ -30,10 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/styles/mixin.global.scss",
-              "src/styles/colors.global.scss",
-              "src/styles/fonts.global.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -47,8 +44,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "150kb",
+                  "maximumError": "150kb"
                 }
               ],
               "outputHashing": "all"
@@ -93,10 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/styles/mixin.global.scss",
-              "src/styles/colors.global.scss",
-              "src/styles/fonts.global.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }

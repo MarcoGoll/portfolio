@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/mixin.global.scss';
-@import './styles/colors.global.scss';
+@import './styles/fonts';
+@import './styles/mixin';
+@import './styles/variables';
 
 * {
     margin: 0;
@@ -19,6 +20,7 @@ body {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 button {

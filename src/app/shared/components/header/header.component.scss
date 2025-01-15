@@ -1,5 +1,4 @@
-@import './../../../../styles/mixin.global.scss';
-@import './../../../../styles/colors.global.scss';
+@import './../../../../styles.scss';
 
 header {
     position: absolute;
@@ -11,9 +10,9 @@ header {
     @include setFlex();
 }
 
-.headerContainer {
+.headerContent {
     @include setFlex($jc: space-between);
-    background-color: aqua
+
 }
 
 nav {

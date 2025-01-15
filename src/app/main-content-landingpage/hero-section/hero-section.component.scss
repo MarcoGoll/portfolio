@@ -1,0 +1,12 @@
+@import './../../../../src/styles.scss';
+
+#heroSection {
+    height: 100vh;
+    background-image: url('./../../../assets/images/01_Background/Img Original Size/12 Isolated Paper Rips copia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    @include setFlex();
+}
+
+#heroSectionContent {}
