@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/mixin.global.scss"
             ],
             "scripts": []
           },
@@ -90,7 +91,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/mixin.global.scss"
             ],
             "scripts": []
           }
