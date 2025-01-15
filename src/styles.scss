@@ -2,6 +2,7 @@
 @import './styles/fonts';
 @import './styles/mixin';
 @import './styles/variables';
+@import './styles/base';
 
 * {
     margin: 0;
@@ -16,15 +17,7 @@ html {
 body {
     width: 100%;
     font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
+    font-size: $fSDefault;
 }
 
 .contentLimit {

@@ -9,4 +9,22 @@
     @include setFlex();
 }
 
-#heroSectionContent {}
+#heroSectionContent {
+    @include setFlex();
+}
+
+.heroMainArea {
+    @include setFlex($fd: column);
+}
+
+.heroMainArea__start {
+    @include setFlex($fd: column, $ai: flex-start);
+}
+
+.heroMainArea__end {
+    @include setFlex($fd: column, $ai: flex-end);
+}
+
+.helloWorld {}
+
+.heroLetter {}

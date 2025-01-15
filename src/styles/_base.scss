@@ -1,0 +1,48 @@
+@import './variables';
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: $stdRadiusBtn;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    padding: $stdPaddingBtn;
+    transition: $stdTransition;
+}
+
+.cta {}
+
+.btnDefault {
+    color: $clrBaseBright;
+    border-top: 1px solid $clrBaseBright;
+    border-left: 1px solid $clrBaseBright;
+    border-bottom: 5px solid $clrBaseBright;
+    border-right: 4px solid $clrBaseBright;
+
+    &:hover {
+        transform: translate(4px, 5px);
+        border: 1px solid $clrBaseBright;
+        background-color: $clrHighlight3;
+    }
+}
+
+.btnBlack {
+    color: $clrBaseDark;
+    border-top: 1px solid $clrBaseDark;
+    border-left: 1px solid $clrBaseDark;
+    border-right: 5px solid $clrBaseDark;
+    border-bottom: 4px solid $clrBaseDark;
+
+    &:hover {
+        color: $clrBaseBright;
+        transform: translate(4px, 5px);
+        border: 1px solid $clrBaseDark;
+        background-color: $clrHighlight3;
+    }
+}
