@@ -49,11 +49,6 @@
     font-weight: 700;
     font-size: 128px;
     color: $clrBaseBright;
-    transition: $stdTransition;
-
-    &:hover {
-        color: $clrHighlight1;
-    }
 }
 
 .polaroidContainer {
