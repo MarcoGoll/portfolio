@@ -15,7 +15,9 @@ header {
 
 }
 
-.logoHeaderContainer>a {
+.logoHeaderContainer {
+    width: 110px;
+    height: 110px;
     @include setFlex();
 }
 
@@ -23,7 +25,8 @@ header {
     transition: $stdTransition;
 
     &:hover {
-        transform: scale(1.1);
+        width: 110px;
+        height: 110px;
         transform: rotate(4deg);
     }
 }
@@ -33,7 +36,6 @@ header {
 
     &:hover {
         transform: scale(1.1);
-        transform: rotate(-4deg);
     }
 }
 
