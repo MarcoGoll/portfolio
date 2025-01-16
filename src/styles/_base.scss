@@ -24,9 +24,10 @@ button {
     border-left: 1px solid $clrBaseBright;
     border-bottom: 5px solid $clrBaseBright;
     border-right: 4px solid $clrBaseBright;
+    transition: $stdTransition;
 
     &:hover {
-        transform: translate(4px, 5px);
+        transform: translate(3px, 4px);
         border: 1px solid $clrBaseBright;
         background-color: $clrHighlight3;
     }
@@ -41,7 +42,7 @@ button {
 
     &:hover {
         color: $clrBaseBright;
-        transform: translate(4px, 5px);
+        transform: translate(3px, 4px);
         border: 1px solid $clrBaseDark;
         background-color: $clrHighlight3;
     }

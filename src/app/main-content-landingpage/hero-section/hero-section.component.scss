@@ -14,7 +14,9 @@
 }
 
 .heroMainArea {
-    @include setFlex($fd: column);
+    width: 900px;
+    height: 500px;
+    @include setFlex($fd: column, $jc: flex-start, $ai: stretch);
 }
 
 .heroMainArea__start {
@@ -25,6 +27,28 @@
     @include setFlex($fd: column, $ai: flex-end);
 }
 
-.helloWorld {}
+.helloWorld {
+    background-color: transparent;
+    border-radius: $stdRadiusBtn;
+    font-weight: 500;
+    padding: $stdPaddingBtn;
+    transition: $stdTransition;
+    color: $clrBaseBright;
+    border: 1px solid $clrBaseBright;
+    transition: $stdTransition;
 
-.heroLetter {}
+    &:hover {
+        background-color: $clrHighlight2;
+    }
+}
+
+.heroLetter {
+    font-weight: 700;
+    font-size: 128px;
+    color: $clrBaseBright;
+    transition: $stdTransition;
+
+    &:hover {
+        color: $clrHighlight1;
+    }
+}

@@ -17,13 +17,10 @@ header {
 
 .navLinkContainer {
     padding: 8px;
-
-    &:hover {
-        background-repeat: none;
-        background-size: cover;
-        background-position: center;
-    }
-
+    transition: $stdTransition;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
 }
 
 #navAboutMeContainer {
