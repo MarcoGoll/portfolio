@@ -10,6 +10,7 @@
 }
 
 #heroSectionContent {
+    position: relative;
     @include setFlex();
 }
 
@@ -86,4 +87,19 @@
     bottom: 0;
     z-index: -1;
 
+}
+
+.socialMediaContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include setFlex($fd: column, $gap: 8px);
+}
+
+.socialMediaIcon {
+    transition: $stdTransition;
+
+    &:hover {
+        fill: $clrHighlight2;
+    }
 }
