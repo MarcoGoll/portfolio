@@ -5,7 +5,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 10vh;
+    height: 110px;
 
     @include setFlex();
 }
@@ -31,27 +31,29 @@ header {
     }
 }
 
-.logoSVG>text {
-    transition: $stdTransition;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
 .navLinkContainer {
+    position: relative;
     padding: 8px;
     transition: $stdTransition;
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    width: 110px;
+    height: 50px;
 }
 
-#navAboutMeContainer {
+.topDownContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+}
 
-    &:hover {
-        background-image: url('./../../../../assets/images/00_Hand-drawn lines/00_Header/Color option 1/1.svg');
-    }
+.fadeInImageAboutMe {
+    width: 100px;
+    height: auto;
 }
 
 #navSkillsContainer {
@@ -83,6 +85,8 @@ nav {
 }
 
 .navLink {
+    position: relative;
+    z-index: 1;
     font-weight: 700;
     color: $clrBaseBright;
 }
