@@ -1,0 +1,68 @@
+@import './../../../../src/styles.scss';
+
+#aboutMeSection {
+    @include setFlex();
+}
+
+#aboutMeSectionContent {
+    position: relative;
+    @include setFlex();
+    height: 720px;
+}
+
+.imagesContainer {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+#stripeYellow {
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+    transform: rotate(-4deg);
+}
+
+#stripeBlue {
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+}
+
+#stripeOrange {
+    position: absolute;
+    top: 55%;
+    z-index: 1;
+    transform: rotate(4deg);
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.textStripeContainer {
+    color: $clrBaseBright;
+    @include setFlex();
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+.textContainer {
+    @include setFlex($fd: column, $jc: flex-start, $ai: flex-start, $gap: 64px);
+    width: 50%;
+}
+
+.btnContainer {
+    width: 100%;
+    @include setFlex($jc: flex-end);
+}
+
+.imageStripe {
+    width: 100%;
+}
+
+#fadeInImage {
+    width: 100%
+}
