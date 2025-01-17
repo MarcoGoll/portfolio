@@ -14,18 +14,19 @@
     position: relative;
     height: 100%;
     width: 50%;
+    @include setFlex();
 }
 
 #stripeYellow {
     position: absolute;
-    top: 20%;
+    top: 25%;
     z-index: 3;
     transform: rotate(-4deg);
 }
 
 #stripeBlue {
     position: absolute;
-    top: 35%;
+    top: 40%;
     z-index: 2;
 }
 
@@ -38,11 +39,12 @@
 
 .imgContainer {
     position: relative;
+    @include setFlex();
 }
 
 .textStripeContainer {
     color: $clrBaseBright;
-    @include setFlex();
+    @include setFlex($gap: 8px);
     position: absolute;
     top: 30%;
     left: 0;
@@ -60,9 +62,14 @@
 }
 
 .imageStripe {
-    width: 100%;
+    width: 560px
 }
 
-#fadeInImage {
-    width: 100%
+.fadeInLeftRightContainer {
+    width: 320px;
+    overflow: hidden;
+}
+
+#fadeInImageAboutMe {
+    width: 320px
 }

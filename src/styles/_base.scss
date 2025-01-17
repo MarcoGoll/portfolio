@@ -15,7 +15,7 @@ button {
     background-color: transparent;
     border-radius: $stdRadiusBtn;
     font-family: inherit;
-    font-size: inherit;
+    font-size: $fSDefaultBtn;
     font-weight: 500;
     padding: $stdPaddingBtn;
     transition: $stdTransition;
