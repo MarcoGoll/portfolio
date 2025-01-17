@@ -25,7 +25,7 @@ export class HeroHighlightDirective {
     }
   }
 
-  hasLowerCase(str: string) {
+  private hasLowerCase(str: string) {
     return str.toUpperCase() != str;
   }
 

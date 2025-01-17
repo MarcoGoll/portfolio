@@ -58,6 +58,7 @@
     transform: rotate(8deg);
     width: 200px;
     height: auto;
+    @include setFlex($ai: flex-end);
     transition: $stdTransition;
     filter: grayscale(100%);
 
@@ -71,7 +72,7 @@
     height: auto;
 }
 
-.profileImage {
+.polaroidImage {
     width: 100%;
     height: 90%;
     object-fit: cover;
@@ -81,7 +82,14 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+}
 
+.polaroidText {
+    position: absolute;
+    bottom: 8px;
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .socialMediaContainer {
