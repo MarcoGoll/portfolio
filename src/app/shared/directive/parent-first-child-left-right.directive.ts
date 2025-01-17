@@ -1,11 +1,11 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
-
 @Directive({
-  selector: '[appParentFirstChildTopDown]',
+  selector: '[appParentFirstChildLeftRight]',
   standalone: true
 })
-export class ParentFirstChildTopDownDirective {
+export class ParentFirstChildLeftRightDirective {
+
   interValIDSlideIn: any;
   interValIDSlideOut: any;
   prozent: number = 0;
@@ -26,7 +26,7 @@ export class ParentFirstChildTopDownDirective {
     this.interValIDSlideIn = setInterval(() => {
       if (this.prozent < 100) {
         this.prozent += 10;
-        this.el.nativeElement.parentElement.firstChild.style.height = this.prozent + "%";
+        this.el.nativeElement.parentElement.firstChild.style.width = this.prozent + "%";
       }
     }, 20)
 
@@ -34,12 +34,14 @@ export class ParentFirstChildTopDownDirective {
 
   private slideOut() {
     clearInterval(this.interValIDSlideIn);
+
     this.interValIDSlideOut = setInterval(() => {
       if (this.prozent > 0) {
         this.prozent -= 10;
-        this.el.nativeElement.parentElement.firstChild.style.height = this.prozent + "%";
+        this.el.nativeElement.parentElement.firstChild.style.width = this.prozent + "%";
       }
     }, 20)
   }
+
 
 }
