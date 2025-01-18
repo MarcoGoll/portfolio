@@ -14,7 +14,7 @@
     position: relative;
     height: 100%;
     width: 50%;
-    @include setFlex();
+    @include setFlex($jc: flex-start);
 }
 
 #stripeYellow {
@@ -57,6 +57,7 @@
 }
 
 .btnContainer {
+    height: 70px;
     width: 100%;
     @include setFlex($jc: flex-end);
 }
