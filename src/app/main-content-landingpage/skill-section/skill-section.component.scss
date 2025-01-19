@@ -1,0 +1,38 @@
+@import './../../../../src/styles.scss';
+
+#skillSection {
+    height: 100vh;
+    background-image: url('./../../../assets/images/01_Background/Img Original Size/Skills BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    @include setFlex();
+}
+
+#skillSectionContent {
+    position: relative;
+    @include setFlex();
+}
+
+.headerConterainer {
+    color: $clrBaseBright;
+}
+
+.skillsOverallContainer {
+    @include setFlex($fd: column);
+}
+
+.skillsContainer {
+    @include setFlex($gap: 8px);
+    flex-wrap: wrap;
+    color: $clrBaseBright;
+}
+
+.skillContainer {
+    @include setFlex($fd: column);
+}
+
+.imgInterest {
+    width: 200px;
+    height: 200px;
+}

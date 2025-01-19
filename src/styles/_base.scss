@@ -21,7 +21,20 @@ button {
     transition: $stdTransition;
 }
 
-.cta {}
+.cta {
+    color: $clrBaseBright;
+    border-top: 1px solid $clrHighlight2;
+    border-left: 1px solid $clrHighlight2;
+    border-bottom: 5px solid $clrHighlight2;
+    border-right: 4px solid $clrHighlight2;
+    transition: $stdTransition;
+
+    &:hover {
+        transform: translate(3px, 4px);
+        border: 1px solid $clrBaseBright;
+        background-color: $clrHighlight2;
+    }
+}
 
 .btnDefault {
     color: $clrBaseBright;
