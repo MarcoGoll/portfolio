@@ -84,24 +84,64 @@
     }
 }
 
-.interestContainer {
+.interestsContainer {
     align-self: flex-end;
     @include setFlex();
     color: $clrBaseBright;
+    position: relative;
+    width: 250px;
+    background-color: green;
+}
+
+.interestContainer {
+    @include setFlex($fd: column);
+    transform: rotate(8deg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -200px;
+}
+
+
+#interestBefore {
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    z-index: 3;
+}
+
+#interestTransition {
+    z-index: 2;
+}
+
+#interestAfter {
+    z-index: 1;
+}
+
+#imgInterest1 {
+
+    z-index: -1;
+}
+
+#imgInterest3 {
+    z-index: -1;
 }
 
 .imgInterest {
+    position: absolute;
     width: 200px;
     height: 200px;
-    transform: rotate(8deg);
 }
 
-.interestAfter {
+#interestAfter>p {
     text-align: center;
+    padding: 8px
 }
 
 .interestTechniques {
-    @include setFlex();
+    @include setFlex($gap: 8px);
 }
 
 .interestTechnique {
