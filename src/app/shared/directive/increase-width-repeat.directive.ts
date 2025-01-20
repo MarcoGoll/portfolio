@@ -1,10 +1,11 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appLeftRightRepeat]',
+  selector: '[appIncreaseWidthRepeat]',
   standalone: true
 })
-export class LeftRightRepeatDirective {
+export class IncreaseWidthRepeatDirective {
+
   width: number = 0;
   isIncreaseDone = false;
 
@@ -14,10 +15,10 @@ export class LeftRightRepeatDirective {
 
   private slide() {
     setInterval(() => {
-      if (this.width < 320 && !(this.isIncreaseDone)) { //TODO: die 320 bekomm ich auch wenn ich die width des Child abfrage <= so ändern, dann kann ich das global benutzen
+      if (this.width < this.el.nativeElement.firstChild.width && !(this.isIncreaseDone)) {
         this.width += 10;
         this.el.nativeElement.style.width = this.width + "px";
-        if (this.width == 320) {
+        if (this.width == this.el.nativeElement.firstChild.width) {
           setTimeout(() => {
             this.isIncreaseDone = true
           }, 2000);
@@ -35,4 +36,5 @@ export class LeftRightRepeatDirective {
     }, 10)
 
   }
+
 }

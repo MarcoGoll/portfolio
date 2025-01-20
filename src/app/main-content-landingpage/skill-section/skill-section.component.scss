@@ -11,28 +11,86 @@
 
 #skillSectionContent {
     position: relative;
-    @include setFlex();
+    @include setFlex($ai: flex-start, $gap: 48px);
 }
 
-.headerConterainer {
+.headerContainer {
     color: $clrBaseBright;
+    @include setFlex($fd: column, $jc: flex-start, $ai: flex-end);
+}
+
+.h2Container {
+    position: relative;
+    width: 270px;
+    z-index: 1;
+}
+
+.h2Container>h2 {
+    text-align: end;
+    padding-right: 8px;
+}
+
+
+.fadeInCircleContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#fadeInImageSkill {
+    width: 270px;
+    height: auto;
 }
 
 .skillsOverallContainer {
-    @include setFlex($fd: column);
+    @include setFlex($fd: column, $gap: 32px);
+}
+
+.skillsIntroductionContainer {
+    background-image: url('./../../../assets/images/02_Ripped Paper/1.Skills description.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include setFlex();
+    width: 700px;
+    height: 120px;
+}
+
+.skillsIntroductionContainer>p {
+    padding: 32px;
 }
 
 .skillsContainer {
-    @include setFlex($gap: 8px);
+    @include setFlex($jc: flex-start, $gap: 40px);
     flex-wrap: wrap;
     color: $clrBaseBright;
+    width: 700px;
 }
 
 .skillContainer {
     @include setFlex($fd: column);
 }
 
+.skillContainer>img {
+    filter: grayscale(100%);
+    transition: $stdTransition;
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(0.9);
+    }
+}
+
+.interestContainer {
+    align-self: flex-end;
+    @include setFlex();
+}
+
 .imgInterest {
     width: 200px;
     height: 200px;
+    transform: rotate(8deg);
 }

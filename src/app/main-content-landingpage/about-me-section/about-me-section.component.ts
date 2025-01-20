@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { LeftRightRepeatDirective } from '../../shared/directive/left-right-repeat.directive';
+import { IncreaseWidthRepeatDirective } from '../../shared/directive/increase-width-repeat.directive';
 
 @Component({
   selector: 'app-about-me-section',
   standalone: true,
-  imports: [LeftRightRepeatDirective],
+  imports: [IncreaseWidthRepeatDirective],
   templateUrl: './about-me-section.component.html',
   styleUrl: './about-me-section.component.scss'
 })
