@@ -1,0 +1,17 @@
+@import './../../../../src/styles.scss';
+
+#projectsSection {
+    @include setFlex();
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.projectsSectionContent {
+    @include setFlex($gap: 64px);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projectContainer {
+    width: 40%;
+}

@@ -1,8 +1,8 @@
 <section id="projectsSection">
     <div class="projectsSectionContent">
-        <app-description-overview></app-description-overview>
+        <app-description-overview class="projectContainer"></app-description-overview>
         @for (project of projects; track $index) {
-        <app-projekt-overview [project]="project"></app-projekt-overview>
+        <app-projekt-overview [project]="project" class="projectContainer"></app-projekt-overview>
         }
     </div>
 </section>

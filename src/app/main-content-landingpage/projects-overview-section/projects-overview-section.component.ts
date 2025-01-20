@@ -17,27 +17,27 @@ import { Project } from '../../shared/interfaces/project';
 export class ProjectsOverviewSectionComponent {
 
   projects: Project[] = [{
-    projectImg: "",
+    projectImg: "./assets/images/laptop.png",
     name: "Join",
-    description: "",
-    implementationDetails: "",
-    duration: "",
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    duration: "5 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]
   },
   {
-    projectImg: "",
+    projectImg: "./assets/images/sharkie.png",
     name: "Sharkie",
-    description: "",
-    implementationDetails: "",
-    duration: "",
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    duration: "4 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]
   },
   {
-    projectImg: "",
-    name: "Pokemon",
-    description: "",
-    implementationDetails: "",
-    duration: "",
+    projectImg: "./assets/images/pokedex.png",
+    name: "Pokedex",
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    duration: "2 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]
   }
   ];

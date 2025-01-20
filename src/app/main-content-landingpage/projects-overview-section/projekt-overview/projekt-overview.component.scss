@@ -1,0 +1,15 @@
+@import './../../../../../src/styles.scss';
+
+.projectContainer {
+    @include setFlex($fd: column, $gap: 32px, $ai: flex-start);
+    width: 100%;
+    max-width: 560px;
+    height: 550px;
+}
+
+.projectImg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
