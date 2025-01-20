@@ -1,5 +1,9 @@
 <div class="projectContainer">
-    <img class="projectImg" src={{project.projectImg}} alt="">
+    <div appProjectHighlight class="imageContainer">
+        <img class="projectImg" src={{project.projectImg}} alt="">
+        <button class="cta d_none">Live test</button>
+        <button class="btnDefault d_none">Project details</button>
+    </div>
     <h3 class="projectHeadline"> {{project.name}}</h3>
     <p class="projectDescription"> {{project.description}}</p>
 </div>

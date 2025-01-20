@@ -1,7 +1,7 @@
 @import './../../../../../src/styles.scss';
 
 .projectContainer {
-    @include setFlex($fd: column, $gap: 32px, $ai: flex-start);
+    @include setFlex($fd: column, $gap: 16px, $ai: flex-start);
     width: 100%;
     max-width: 560px;
     height: 550px;
@@ -12,4 +12,27 @@
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.projectImg {
+    transition: $stdTransition;
+
+}
+
+.cta {
+    position: absolute;
+    bottom: 30px;
+    right: 220px;
+}
+
+.btnDefault {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
 }

@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../../shared/interfaces/project';
+import { ProjectHighlightDirective } from '../../../shared/directive/project-highlight.directive';
 
 @Component({
   selector: 'app-projekt-overview',
   standalone: true,
-  imports: [],
+  imports: [ProjectHighlightDirective],
   templateUrl: './projekt-overview.component.html',
   styleUrl: './projekt-overview.component.scss'
 })
