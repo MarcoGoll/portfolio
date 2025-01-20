@@ -87,10 +87,28 @@
 .interestContainer {
     align-self: flex-end;
     @include setFlex();
+    color: $clrBaseBright;
 }
 
 .imgInterest {
     width: 200px;
     height: 200px;
     transform: rotate(8deg);
+}
+
+.interestAfter {
+    text-align: center;
+}
+
+.interestTechniques {
+    @include setFlex();
+}
+
+.interestTechnique {
+    @include setFlex($fd: column);
+}
+
+.interestTechnique>img {
+    width: 40px;
+    height: 40px;
 }
