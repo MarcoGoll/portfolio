@@ -1,4 +1,16 @@
-.projectsIntroductionContainer {
+.projectsIntroductionContainer {}
 
-    background-color: aqua;
+.h2Container {
+    position: relative;
+    width: 270px;
+    z-index: 1;
+}
+
+.fadeInLeftRightContainer {
+    width: 260px;
+    overflow: hidden;
+}
+
+#fadeInImageProjects {
+    width: 260px;
 }
