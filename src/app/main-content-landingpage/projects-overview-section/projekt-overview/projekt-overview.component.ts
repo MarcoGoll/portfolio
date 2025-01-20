@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Project } from '../../../shared/interfaces/project';
 
 @Component({
   selector: 'app-projekt-overview',
@@ -9,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class ProjektOverviewComponent {
 
+  @Input("project") project: Project =
+    {
+      //DEFAULT VALUE
+      projectImg: "",
+      name: "",
+      description: "",
+      implementationDetails: "",
+      duration: "",
+      techniques: [{ techniqueImg: "", technique: "" }]
+    }
 }
