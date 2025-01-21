@@ -1,0 +1,28 @@
+@import './../../../../src/styles.scss';
+
+#feedbackSection {
+    @include setFlex();
+}
+
+#feedbackSectionContent {
+    @include setFlex($fd: column);
+    width: 100%;
+}
+
+.feedbackHeadlineContainer {
+    align-self: flex-end;
+    @include setFlex($fd: column, $ai: flex-end);
+}
+
+.introductionContainer {
+    @include setFlex($gap: 8px);
+}
+
+.fadeInRightLeftContainer {
+    width: 150px;
+    overflow: hidden;
+}
+
+#fadeInImageFeedback {
+    width: 150px;
+}

@@ -6,7 +6,7 @@
     margin-bottom: 64px;
 }
 
-.projectsSectionContent {
+#projectsSectionContent {
     @include setFlex($gap: 64px);
     flex-wrap: wrap;
     width: 100%;

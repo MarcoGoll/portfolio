@@ -1,5 +1,5 @@
 <section id="projectsSection">
-    <div class="projectsSectionContent">
+    <div id="projectsSectionContent" class="contentLimit">
         <app-description-overview class="projectContainer"></app-description-overview>
         @for (project of projects; track $index) {
         <app-projekt-overview [project]="project" class="projectContainer"></app-projekt-overview>
