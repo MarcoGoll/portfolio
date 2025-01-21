@@ -21,7 +21,7 @@ export class ProjectHighlightDirective {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
         this.el.nativeElement.children[i].style.transform = "scale(1.2)";
-        this.el.nativeElement.children[i].style.filter = "grayscale(100%)";
+        // this.el.nativeElement.children[i].style.filter = "grayscale(100%)";
       }
       if (i > 0) {
         this.el.nativeElement.children[i].classList.remove("d_none");
@@ -33,7 +33,7 @@ export class ProjectHighlightDirective {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
         this.el.nativeElement.children[i].style.transform = " scale(1)";
-        this.el.nativeElement.children[i].style.filter = "grayscale(0%)";
+        // this.el.nativeElement.children[i].style.filter = "grayscale(0%)";
       }
       if (i > 0) {
         this.el.nativeElement.children[i].classList.add("d_none");

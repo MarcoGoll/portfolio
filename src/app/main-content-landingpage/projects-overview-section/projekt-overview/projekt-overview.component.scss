@@ -18,6 +18,22 @@
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        opacity: 0;
+        transition: $stdTransition;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
 }
 
 .projectImg {
@@ -29,10 +45,12 @@
     position: absolute;
     bottom: 30px;
     right: 220px;
+    z-index: 1;
 }
 
 .btnDefault {
     position: absolute;
     bottom: 30px;
     right: 30px;
+    z-index: 1;
 }
