@@ -9,12 +9,13 @@
 }
 
 #contactMeSectionContent {
-    @include setFlex();
+    @include setFlex($gap: 64px);
     width: 100%;
 }
 
 .contactMeIntroductionContainer {
     @include setFlex($fd: column, $ai: flex-start);
+    width: 50%;
 }
 
 .fadeInLeftRightContainer {
@@ -24,4 +25,27 @@
 
 #fadeInImageProjects {
     width: 260px;
+}
+
+.contactMeFormContainer {
+    width: 50%;
+}
+
+.contactMeForm {
+    @include setFlex($fd: column, $ai: flex-start);
+}
+
+.inputContainer {
+    @include setFlex($fd: column);
+}
+
+.contactMeForm__label {}
+
+.contactMeForm__input,
+.contactMeForm__textarea {}
+
+.contactMeForm__textarea {}
+
+#sendBtn {
+    align-self: flex-end;
 }

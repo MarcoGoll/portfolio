@@ -13,7 +13,24 @@
             </div>
         </div>
         <div class="contactMeFormContainer">
-            <!-- tbd. -->
+            <form class="contactMeForm" (ngSubmit)="onSubmit()">
+                <div class="inputContainer">
+                    <label class="contactMeForm__label" for="name">What's your Name?</label>
+                    <input [(ngModel)]="contactData.name" class="contactMeForm__input" type="text" id="name" name="name"
+                        placeholder="Your name goes here">
+                </div>
+                <div class="inputContainer">
+                    <label class="contactMeForm__label" for="email">What's your email?</label>
+                    <input [(ngModel)]="contactData.email" class="contactMeForm__input" type="text" id="email"
+                        name="email" placeholder="yourmail@email.com">
+                </div>
+                <div class="inputContainer">
+                    <label class="contactMeForm__label" for="message">How can I help you?</label>
+                    <textarea [(ngModel)]="contactData.message" class="contactMeForm__textarea" type="text" id="message"
+                        name="message" placeholder="Hello Marco, I am interested in.."></textarea>
+                </div>
+                <button id="sendBtn" class="btnDefault" type="submit" value="Send">Send</button>
+            </form>
         </div>
     </div>
 </section>
