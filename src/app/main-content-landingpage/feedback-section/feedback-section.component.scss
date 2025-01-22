@@ -36,11 +36,12 @@
 }
 
 .feedbackContainer {
-    width: 485px;
+    width: 486px;
     height: 320px;
     padding: 24px;
     @include setFlex($fd: column, $ai: space-between, $jc: flex-end, $gap: 8px);
     position: absolute;
+    border-radius: 20px;
 
     &:hover::after {
         content: "";
@@ -53,7 +54,6 @@
         background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/Hover.png');
         background-size: cover;
         opacity: 1;
-        transition: $stdTransition;
     }
 }
 
@@ -76,9 +76,12 @@
     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/A.png');
     background-size: cover;
     transform: rotate(-4deg);
+    transition: $stdTransition;
+
 
     &:hover {
         z-index: 4;
+        transform: rotate(-3deg) translateY(-8px);
     }
 }
 
@@ -87,9 +90,11 @@
     z-index: 2;
     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/B.png');
     background-size: cover;
+    transition: $stdTransition;
 
     &:hover {
         z-index: 4;
+        transform: rotate(-1deg) translateY(-8px);
     }
 }
 
@@ -100,9 +105,11 @@
     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/A.png');
     background-size: cover;
     transform: rotate(4deg);
+    transition: $stdTransition;
 
     &:hover {
         z-index: 4;
+        transform: rotate(3deg) translateY(-8px);
     }
 }
 

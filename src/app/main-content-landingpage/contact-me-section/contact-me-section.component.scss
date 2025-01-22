@@ -1,0 +1,27 @@
+@import './../../../../src/styles.scss';
+
+#contactMeSection {
+    @include setFlex();
+    background-image: url('./../../../assets/images/01_Background/Img Original Size/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $clrBaseBright;
+}
+
+#contactMeSectionContent {
+    @include setFlex();
+    width: 100%;
+}
+
+.contactMeIntroductionContainer {
+    @include setFlex($fd: column, $ai: flex-start);
+}
+
+.fadeInLeftRightContainer {
+    width: 260px;
+    overflow: hidden;
+}
+
+#fadeInImageProjects {
+    width: 260px;
+}
