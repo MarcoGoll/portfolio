@@ -2,10 +2,11 @@
 
 #contactMeSection {
     @include setFlex();
-    background-image: url('./../../../assets/images/01_Background/Img Original Size/Footer.png');
+    background-image: url('./../../../assets/images/01_Background/all/footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: $clrBaseBright;
+    min-height: 800px;
 }
 
 #contactMeSectionContent {
@@ -32,14 +33,21 @@
 }
 
 .contactMeForm {
-    @include setFlex($fd: column, $ai: flex-start);
+    @include setFlex($fd: column, $ai: flex-start, $gap: 8px);
 }
 
 .inputContainer {
-    @include setFlex($fd: column);
+    @include setFlex($fd: column, $ai: flex-start);
 }
 
-.contactMeForm__label {}
+.contactMeForm__label {
+    font-size: 24px;
+    font-weight: 500;
+
+    &:active {
+        color: $clrHighlight1;
+    }
+}
 
 .contactMeForm__input,
 .contactMeForm__textarea {}
@@ -48,4 +56,9 @@
 
 #sendBtn {
     align-self: flex-end;
+}
+
+.errorMessage {
+    color: $clrErrorMessage;
+    font-size: $fSSec;
 }

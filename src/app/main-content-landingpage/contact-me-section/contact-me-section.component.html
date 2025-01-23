@@ -13,22 +13,33 @@
             </div>
         </div>
         <div class="contactMeFormContainer">
-            <form class="contactMeForm" (ngSubmit)="onSubmit()">
+            <form class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="inputContainer">
                     <label class="contactMeForm__label" for="name">What's your Name?</label>
-                    <input [(ngModel)]="contactData.name" class="contactMeForm__input" type="text" id="name" name="name"
-                        placeholder="Your name goes here">
+                    <input #name="ngModel" [(ngModel)]="contactData.name" class="contactMeForm__input" type="text"
+                        id="name" name="name" placeholder="Your name goes here" required>
                 </div>
+                @if (!name.valid && name.touched) {
+                <p class="errorMessage">Oops! it seems your name is missing</p>
+                }
                 <div class="inputContainer">
                     <label class="contactMeForm__label" for="email">What's your email?</label>
-                    <input [(ngModel)]="contactData.email" class="contactMeForm__input" type="text" id="email"
-                        name="email" placeholder="yourmail@email.com">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" class="contactMeForm__input" type="text"
+                        id="email" name="email" placeholder="yourmail@email.com" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
+                @if (!email.valid && email.touched) {
+                <p class="errorMessage">Hoppla! your email is required</p>
+                }
                 <div class="inputContainer">
                     <label class="contactMeForm__label" for="message">How can I help you?</label>
-                    <textarea [(ngModel)]="contactData.message" class="contactMeForm__textarea" type="text" id="message"
-                        name="message" placeholder="Hello Marco, I am interested in.."></textarea>
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" class="contactMeForm__textarea"
+                        type="text" id="message" name="message" placeholder="Hello Marco, I am interested in.."
+                        required></textarea>
                 </div>
+                @if (!message.valid && message.touched) {
+                <p class="errorMessage">What do you need to develop?</p>
+                }
                 <button id="sendBtn" class="btnDefault" type="submit" value="Send">Send</button>
             </form>
         </div>

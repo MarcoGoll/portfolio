@@ -32,10 +32,8 @@ button {
     border-left: 1px solid $clrHighlight2;
     border-bottom: 5px solid $clrHighlight2;
     border-right: 4px solid $clrHighlight2;
-    transition: $stdTransition;
 
     &:hover {
-        transform: translate(3px, 4px);
         border: 1px solid $clrBaseBright;
         background-color: $clrHighlight2;
     }
@@ -50,7 +48,6 @@ button {
     transition: $stdTransition;
 
     &:hover {
-        transform: translate(3px, 4px);
         border: 1px solid $clrBaseBright;
         background-color: $clrHighlight3;
     }
@@ -74,4 +71,8 @@ button {
 input,
 textarea {
     font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+    font-size: $fSSec;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
