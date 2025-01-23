@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { IncreaseWidthRepeatDirective } from '../../shared/directive/increase-width-repeat.directive';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -6,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-contact-me-section',
   standalone: true,
-  imports: [IncreaseWidthRepeatDirective, FormsModule],
+  imports: [IncreaseWidthRepeatDirective, FormsModule, CommonModule],
   templateUrl: './contact-me-section.component.html',
   styleUrl: './contact-me-section.component.scss'
 })

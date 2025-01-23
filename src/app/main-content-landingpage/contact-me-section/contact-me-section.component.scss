@@ -1,7 +1,8 @@
 @import './../../../../src/styles.scss';
 
 #contactMeSection {
-    @include setFlex();
+    @include setFlex($ai: flex-start);
+    padding-top: 256px;
     background-image: url('./../../../assets/images/01_Background/all/footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,16 +11,17 @@
 }
 
 #contactMeSectionContent {
-    @include setFlex($gap: 64px);
+    @include setFlex($ai: flex-start, $gap: 64px);
     width: 100%;
 }
 
 .contactMeIntroductionContainer {
-    @include setFlex($fd: column, $ai: flex-start);
+    @include setFlex($fd: column, $ai: flex-start, $gap: 48px);
     width: 50%;
 }
 
 .fadeInLeftRightContainer {
+    margin-left: 50%;
     width: 260px;
     overflow: hidden;
 }
@@ -33,28 +35,67 @@
 }
 
 .contactMeForm {
-    @include setFlex($fd: column, $ai: flex-start, $gap: 8px);
-}
-
-.inputContainer {
     @include setFlex($fd: column, $ai: flex-start);
 }
 
-.contactMeForm__label {
-    font-size: 24px;
-    font-weight: 500;
+.inputContainer {
+    @include setFlex($fd: column-reverse, $ai: flex-start, $gap: 10px);
+    width: 100%;
+}
 
-    &:active {
-        color: $clrHighlight1;
+
+
+fieldset {
+    border-top: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $clrHighlight1;
+    padding: 16px 24px;
+
+    &:hover {
+        border-top: 1px solid $clrHighlight2;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $clrHighlight2;
+
+        .contactMeForm__label {
+            color: $clrHighlight3;
+        }
+    }
+
+    &:focus-within {
+        .contactMeForm__label {
+            color: $clrHighlight2;
+        }
     }
 }
 
-.contactMeForm__input,
-.contactMeForm__textarea {}
 
-.contactMeForm__textarea {}
+.contactMeForm__label {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.contactMeForm__input {
+    cursor: pointer;
+    color: $clrBaseBright;
+    width: 100%;
+
+    &:user-invalid {
+        color: $clrErrorMessage;
+    }
+
+    &:user-invalid~label {
+        color: red;
+    }
+}
+
+
 
 #sendBtn {
+    margin-top: 32px;
     align-self: flex-end;
 }
 
