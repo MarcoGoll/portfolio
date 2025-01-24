@@ -26,6 +26,25 @@ button {
     transition: $stdTransition;
 }
 
+button:disabled {
+    cursor: default;
+    color: $clrDisabled;
+    border-top: 1px solid $clrDisabled;
+    border-left: 1px solid $clrDisabled;
+    border-bottom: 5px solid $clrDisabled;
+    border-right: 4px solid $clrDisabled;
+
+    &:hover {
+        cursor: default;
+        color: $clrDisabled;
+        border-top: 1px solid $clrDisabled;
+        border-left: 1px solid $clrDisabled;
+        border-bottom: 5px solid $clrDisabled;
+        border-right: 4px solid $clrDisabled;
+        background-color: transparent;
+    }
+}
+
 .cta {
     color: $clrBaseBright;
     border-top: 1px solid $clrHighlight2;

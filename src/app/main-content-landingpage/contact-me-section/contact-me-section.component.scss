@@ -86,21 +86,66 @@ fieldset {
 
     &:user-invalid {
         color: $clrErrorMessage;
+
+        // @Freddy: KLAPPT NICHT! Wie schaff ich es die Border vom Fieldset zu ändern, wenn das Eingabefeld invalide ist?
+        fieldset {
+            border-top: 1px solid $clrBaseBright;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid $clrBaseBright;
+        }
     }
 
     &:user-invalid~label {
-        color: red;
+        color: $clrHighlight3;
     }
 }
 
-
-
 #sendBtn {
-    margin-top: 32px;
+    margin-top: 8px;
     align-self: flex-end;
 }
 
 .errorMessage {
     color: $clrErrorMessage;
     font-size: $fSSec;
+}
+
+.confirmContainer {
+    width: 100%;
+    margin-top: 32px;
+    @include setFlex($fd: column, $ai: flex-start)
+}
+
+.privacyPolicyContainer {
+    @include setFlex($fd: column, $jc: flex-start, $ai: flex-start, $gap: 8px);
+    height: 50px;
+}
+
+.privacyPolicyContainer__imgAndText {
+    @include setFlex($gap: 8px);
+    font-size: 15px;
+}
+
+.privacyPolicyContainer__img {
+    @include setFlex();
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $clrHighlight2Transparent;
+    }
+}
+
+#linkPrivacyPolicy {
+    cursor: pointer;
+    color: $clrHighlight2;
+
+    &:hover {
+        color: $clrHighlight1;
+    }
+}
+
+.hintAcceptance {
+    color: $clrHighlight3;
+    font-size: 14px;
 }

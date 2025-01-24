@@ -38,7 +38,23 @@
                 @if (!message.valid && message.touched) {
                 <!-- <p class="errorMessage">What do you need to develop?</p> -->
                 }
-                <button id="sendBtn" class="btnDefault" type="submit" value="Send">Send</button>
+                <div class="confirmContainer">
+                    <div class="privacyPolicyContainer">
+                        <div class="privacyPolicyContainer__imgAndText">
+                            <div class="privacyPolicyContainer__img" (click)="toggleAcceptanceOfPrivacyPolicy()">
+                                <img src={{imgPrivacyPolicy}} alt="Confirm Checkbox">
+                            </div>
+                            <p>I've read the <a id="linkPrivacyPolicy" href="#">privacy policy</a> and agree to the
+                                processing of my data as
+                                outlined.</p>
+                        </div>
+                        @if (!isAcceptedPrivacyPolicy && isHintNecessary) {
+                        <p class="hintAcceptance">Please accept the privacy policy</p>
+                        }
+                    </div>
+                    <button id="sendBtn" class="btnDefault" type="submit" value="Send"
+                        [disabled]="!isAcceptedPrivacyPolicy">Send</button>
+                </div>
             </form>
         </div>
     </div>
