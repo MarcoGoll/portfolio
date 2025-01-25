@@ -40,7 +40,7 @@
 }
 
 .inputContainer {
-    @include setFlex($fd: column-reverse, $ai: flex-start, $gap: 10px);
+    @include setFlex($fd: column-reverse, $ai: flex-start, $gap: 2px);
     width: 100%;
 }
 
@@ -51,7 +51,9 @@ fieldset {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid $clrHighlight1;
-    padding: 16px 24px;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     &:hover {
         border-top: 1px solid $clrHighlight2;
@@ -83,17 +85,10 @@ fieldset {
     cursor: pointer;
     color: $clrBaseBright;
     width: 100%;
+    margin-top: 10px;
 
     &:user-invalid {
         color: $clrErrorMessage;
-
-        // @Freddy: KLAPPT NICHT! Wie schaff ich es die Border vom Fieldset zu ändern, wenn das Eingabefeld invalide ist?
-        fieldset {
-            border-top: 1px solid $clrBaseBright;
-            border-left: none;
-            border-right: none;
-            border-bottom: 1px solid $clrBaseBright;
-        }
     }
 
     &:user-invalid~label {
@@ -106,9 +101,15 @@ fieldset {
     align-self: flex-end;
 }
 
+.errorMessageContainer {
+    height: 14px;
+    margin-bottom: 8px;
+}
+
 .errorMessage {
     color: $clrErrorMessage;
-    font-size: $fSSec;
+    font-size: $fSTer;
+
 }
 
 .confirmContainer {

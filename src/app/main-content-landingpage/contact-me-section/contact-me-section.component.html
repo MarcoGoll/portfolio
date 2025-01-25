@@ -15,29 +15,42 @@
             </div>
         </div>
         <div class="contactMeFormContainer">
-            <form class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" autocomplete="off">
+            <form id="myForm" class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
+                autocomplete="off">
                 <fieldset class="inputContainer">
+                    <div class="errorMessageContainer">
+                        @if (!name.valid && name.touched) {
+                        <p class="errorMessage">Oops! It seems your name is missing?</p>
+                        }
+                    </div>
                     <input #name="ngModel" [(ngModel)]="contactData.name" class="contactMeForm__input" type="text"
                         id="name" name="name" placeholder="Your name goes here" required>
                     <label class="contactMeForm__label" for="name">What's your Name?</label>
                 </fieldset>
+
                 <fieldset class="inputContainer">
+                    <div class="errorMessageContainer">
+                        @if (!email.valid && email.touched) {
+                        <p class="errorMessage">Hoppla! your email is required</p>
+                        }
+                    </div>
                     <input #email="ngModel" [(ngModel)]="contactData.email" class="contactMeForm__input" type="text"
                         id="email" name="email" placeholder="yourmail@email.com" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     <label class="contactMeForm__label" for="email">What's your email?</label>
                 </fieldset>
-                @if (!email.valid && email.touched) {
-                <!-- <p class="errorMessage">Hoppla! your email is required</p> -->
-                }
+
                 <fieldset class="inputContainer">
+                    <div class="errorMessageContainer">
+                        @if (!message.valid && message.touched) {
+                        <p class="errorMessage">What do you need to develop?</p>
+                        }
+                    </div>
                     <input #message="ngModel" [(ngModel)]="contactData.message" class="contactMeForm__input" type="text"
                         id="message" name="message" placeholder="Hello Marco, I am interested in.." required>
                     <label class="contactMeForm__label" for="message">How can I help you?</label>
                 </fieldset>
-                @if (!message.valid && message.touched) {
-                <!-- <p class="errorMessage">What do you need to develop?</p> -->
-                }
+
                 <div class="confirmContainer">
                     <div class="privacyPolicyContainer">
                         <div class="privacyPolicyContainer__imgAndText">
