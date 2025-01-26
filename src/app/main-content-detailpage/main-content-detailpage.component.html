@@ -3,47 +3,57 @@
         @for (project of projectData.projects; track $index) {
         @if(project.id == "sharkie"){
         <!-- TODO: Bedingung (id value) muss in URL mitkommen und hier ausgelesen werden-->
-        <div class="detailsTextContainer">
-            <div class="detailsTextContainer__goBack">
-                <img src="./assets/images/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
-                    alt="Back Arrow">
-                <a href="">Go Back</a>
+        <div class="goBackContainer">
+            <img src="./assets/images/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
+                alt="Back Arrow">
+            <a routerLink="">Go Back</a>
+        </div>
+        <div class="detailsContainer">
+            <div class="detailsTextContainer">
+                <div class="detailsTextContainer__infos">
+                    <div class="h2Container">
+                        <h2>{{project.name}}</h2>
+                        <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
+                            <img id="fadeInImageProject"
+                                src="./assets/images/00_Hand-drawn lines/01_About me/Color option 1.png"
+                                alt="Underline">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Description</h3>
+                        <p>{{project.description}}</p>
+                    </div>
+                    <div>
+                        <h3>Implementation Details</h3>
+                        <p>{{project.implementationDetails}}</p>
+                    </div>
+                    <div>
+                        <p><b>Duration: </b>{{project.duration}}</p>
+                    </div>
+                    <div class="techniquesContainer">
+                        @for (technique of project.techniques; track $index) {
+                        <div class="techniqueContainer">
+                            <img src={{technique.techniqueImg}} alt={{technique.technique}}>
+                            <p>{{technique.technique}}</p>
+                        </div>
+                        }
+                    </div>
+                </div>
             </div>
-            <div class="detailsTextContainer__infos">
-                <div class="h2Container">
-                    <h2>{{project.name}}</h2>
-                    <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
-                        <img id="fadeInImageProject"
-                            src="./assets/images/00_Hand-drawn lines/01_About me/Color option 1.png" alt="Underline">
-                    </div>
-                </div>
-                <div>
-                    <h3>Description</h3>
-                    <p>{{project.description}}</p>
-                </div>
-                <div>
-                    <h3>Implementation Details</h3>
-                    <p>{{project.implementationDetails}}</p>
-                </div>
-                <div>
-                    <p><b>Duration: </b>{{project.duration}}</p>
-                </div>
-                <div class="techniquesContainer">
-                    @for (technique of project.techniques; track $index) {
-                    <div class="techniqueContainer">
-                        <img src={{technique.techniqueImg}} alt={{technique.technique}}>
-                        <p>{{technique.technique}}</p>
-
-                    </div>
-                    }
+            <div class="detailsImageContainer">
+                <img class="projectImg" src={{project.projectImg}} alt={{project.name}}>
+                <div class="projectLinks">
+                    <a routerLink="" class="btnDefault abtn">GitHub</a>
+                    <a routerLink="" class="cta abtn">Live Test</a>
                 </div>
             </div>
         </div>
-        <div class="detailsImageContainer">
-            <!-- TODO: TBD -->
+        <div class="goNextContainer">
+            <a routerLink="">Next Project</a>
+            <img src="./assets/images/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"
+                alt="Next Arrow">
         </div>
         }
         }
-        <a href="">Zurück</a>
     </div>
 </section>

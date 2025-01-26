@@ -6,21 +6,27 @@
     background-image: url('./../../assets/images/01_Background/all/noteBbook Paper.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     @include setFlex();
 }
 
 #detailsSectionContent {
     position: relative;
-    @include setFlex($jc: space-between);
+    @include setFlex($fd: column, $gap: 48px);
+}
+
+.detailsContainer {
+    @include setFlex($jc: space-between, $ai: flex-start);
 }
 
 .detailsTextContainer {
     width: 50%;
+    padding-left: 48px;
     @include setFlex($fd: column, $ai: flex-start, $gap: 8px);
 }
 
-.detailsTextContainer__goBack {
+.goBackContainer {
+    align-self: flex-start;
     @include setFlex($gap: 8px);
 
     &>img {
@@ -58,5 +64,28 @@
 
     &>img {
         width: 24px;
+    }
+}
+
+.projectImg {
+    width: 560px;
+    border-radius: 20px;
+}
+
+.projectLinks {
+    @include setFlex($gap: 32px);
+}
+
+.detailsImageContainer {
+    @include setFlex($fd: column, $ai: flex-end, $gap: 48px)
+}
+
+.goNextContainer {
+    align-self: flex-end;
+    @include setFlex($gap: 8px);
+
+    &>img {
+        width: 24px;
+        height: 24px;
     }
 }

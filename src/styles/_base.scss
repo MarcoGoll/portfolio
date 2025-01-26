@@ -61,6 +61,7 @@ button {
     border-left: 1px solid $clrHighlight3;
     border-bottom: 5px solid $clrHighlight3;
     border-right: 4px solid $clrHighlight3;
+    background-color: $clrHighlight3Transparent;
 
     &:hover {
         border: 1px solid $clrBaseBright;
