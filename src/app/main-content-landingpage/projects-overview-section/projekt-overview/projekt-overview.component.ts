@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../../shared/interfaces/project';
 import { ProjectHighlightDirective } from '../../../shared/directive/project-highlight.directive';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-projekt-overview',
   standalone: true,
-  imports: [ProjectHighlightDirective],
+  imports: [ProjectHighlightDirective, RouterLink],
   templateUrl: './projekt-overview.component.html',
   styleUrl: './projekt-overview.component.scss'
 })
@@ -14,6 +15,7 @@ export class ProjektOverviewComponent {
   @Input("project") project: Project =
     {
       //DEFAULT VALUE
+      id: "",
       projectImg: "",
       name: "",
       description: "",

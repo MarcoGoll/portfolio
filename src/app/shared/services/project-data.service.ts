@@ -1,21 +1,12 @@
-import { Component } from '@angular/core';
-import { DescriptionOverviewComponent } from './description-overview/description-overview.component';
-import { ProjektOverviewComponent } from './projekt-overview/projekt-overview.component';
-import { Project } from '../../shared/interfaces/project';
+import { Injectable } from '@angular/core';
+import { Project } from '../interfaces/project';
 
-
-@Component({
-  selector: 'app-projects-overview-section',
-  standalone: true,
-  imports: [
-    DescriptionOverviewComponent,
-    ProjektOverviewComponent
-  ],
-  templateUrl: './projects-overview-section.component.html',
-  styleUrl: './projects-overview-section.component.scss'
+@Injectable({
+  providedIn: 'root'
 })
-export class ProjectsOverviewSectionComponent {
+export class ProjectDataService {
 
+  constructor() { }
 
   projects: Project[] = [{
     id: "join",
@@ -33,7 +24,11 @@ export class ProjectsOverviewSectionComponent {
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     duration: "4 Weeks",
-    techniques: [{ techniqueImg: "", technique: "" }]
+    techniques: [
+      { techniqueImg: "./assets/images/04_Icons/HTML.svg", technique: "HTML" },
+      { techniqueImg: "./assets/images/04_Icons/css.svg", technique: "CSS" },
+      { techniqueImg: "./assets/images/04_Icons/js.svg", technique: "JavaScript" }
+    ]
   },
   {
     id: "pokedex",
@@ -42,7 +37,12 @@ export class ProjectsOverviewSectionComponent {
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     duration: "2 Weeks",
-    techniques: [{ techniqueImg: "", technique: "" }]
+    techniques: [
+      { techniqueImg: "./assets/images/04_Icons/HTML.svg", technique: "HTML" },
+      { techniqueImg: "./assets/images/04_Icons/css.svg", technique: "CSS" },
+      { techniqueImg: "./assets/images/04_Icons/js.svg", technique: "JavaScript" },
+      { techniqueImg: "./assets/images/04_Icons/restapi.svg", technique: "REST API" },
+    ]
   }
   ];
 }

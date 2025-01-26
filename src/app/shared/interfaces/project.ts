@@ -1,4 +1,5 @@
 export interface Project {
+    id: string,
     projectImg: string,
     name: string,
     description: string,

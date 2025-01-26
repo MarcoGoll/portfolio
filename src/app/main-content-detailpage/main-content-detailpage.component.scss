@@ -1,0 +1,62 @@
+@import './../../styles.scss';
+
+#detailsSection {
+    height: 100vh;
+    background-color: $clrBaseDark;
+    background-image: url('./../../assets/images/01_Background/all/noteBbook Paper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include setFlex();
+}
+
+#detailsSectionContent {
+    position: relative;
+    @include setFlex($jc: space-between);
+}
+
+.detailsTextContainer {
+    width: 50%;
+    @include setFlex($fd: column, $ai: flex-start, $gap: 8px);
+}
+
+.detailsTextContainer__goBack {
+    @include setFlex($gap: 8px);
+
+    &>img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.detailsTextContainer__infos {
+    padding-left: 48px;
+    @include setFlex($fd: column, $ai: flex-start, $gap: 16px);
+}
+
+.fadeInLeftRightContainer {
+    width: 300px;
+    overflow: hidden;
+}
+
+#fadeInImageProject {
+    position: relative;
+    width: 300px;
+}
+
+.detailsImageContainer {
+    width: 50%;
+}
+
+.techniquesContainer {
+    @include setFlex($gap: 16px);
+    flex-wrap: wrap;
+}
+
+.techniqueContainer {
+    @include setFlex($gap: 8px);
+
+    &>img {
+        width: 24px;
+    }
+}

@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProjectDataService } from '../shared/services/project-data.service';
+import { IncreaseWidthRepeatDirective } from '../shared/directive/increase-width-repeat.directive';
 
 @Component({
   selector: 'app-main-content-detailpage',
   standalone: true,
-  imports: [],
+  imports: [IncreaseWidthRepeatDirective],
   templateUrl: './main-content-detailpage.component.html',
   styleUrl: './main-content-detailpage.component.scss'
 })
 export class MainContentDetailpageComponent {
-
+  projectData = inject(ProjectDataService);
 }

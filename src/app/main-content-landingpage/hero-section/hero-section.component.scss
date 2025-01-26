@@ -101,7 +101,8 @@
 }
 
 .socialMediaIcon {
-    transition: $stdTransition;
+    //transition: $stdTransition;
+    transition: all 200ms linear-gradient;
 
     &:hover {
         fill: $clrHighlight2;
