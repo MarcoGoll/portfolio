@@ -1,1 +1,47 @@
-<p>footer works!</p>
+<footer>
+    <div id="footerContent" class="contentLimit">
+        <div class="logoLeagalContainer">
+            <div class="logoContainer">
+                <a routerLink="#">
+                    <svg class="logoSVG" width="100" height="100" viewBox="0 0 100 100"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Rechtecke mit prozentualen Größen und Positionen -->
+                        <rect x="20%" y="20%" width="15%" height="15%" fill="#f7c518" />
+                        <rect x="40%" y="20%" width="18%" height="12%" fill="#3355ff" />
+                        <rect x="60%" y="20%" width="12%" height="18%" fill="#f87a55" />
+
+                        <rect x="20%" y="50%" width="12%" height="18%" fill="#3355ff" />
+                        <rect x="40%" y="50%" width="15%" height="15%" fill="#f87a55" />
+                        <rect x="60%" y="50%" width="18%" height="12%" fill="#f7c518" />
+
+                        <rect x="20%" y="70%" width="18%" height="12%" fill="#f87a55" />
+                        <rect x="40%" y="70%" width="12%" height="18%" fill="#f7c518" />
+                        <rect x="60%" y="70%" width="15%" height="15%" fill="#3355ff" />
+
+                        <defs>
+                            <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+                                <feDropShadow dx="5" dy="5" stdDeviation="1" flood-color="black" />
+                            </filter>
+                        </defs>
+
+                        <!-- Text mit Drop-Shadow -->
+                        <text x="50%" y="55%" font-size="40" text-anchor="middle" alignment-baseline="middle"
+                            fill="white" font-family="Kalam" font-weight="700" letter-spacing="2px"
+                            filter="url(#f1)">MG</text>
+
+                    </svg>
+
+                </a>
+            </div>
+            <div class="legalContainer">
+                <p>&copy; Marco Gollmer 2025</p>
+                <a href="#">Legal Notice</a>
+            </div>
+        </div>
+        <div class="socialContainer">
+            <a href="https://github.com/MarcoGoll" class="animatedLink">GitHub</a>
+            <a href="https://www.linkedin.com/in/marco-nawroth-6bb288148/" class="animatedLink">LinkedIn</a>
+            <a href="mailto:marco.gollmer@outlook.de" class="animatedLink">Email</a>
+        </div>
+    </div>
+</footer>

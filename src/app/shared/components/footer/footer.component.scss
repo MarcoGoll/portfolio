@@ -1,0 +1,44 @@
+@import './../../../../styles.scss';
+
+footer {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    //height: 110px;
+
+    @include setFlex();
+}
+
+#footerContent {
+    @include setFlex($jc: space-between, $ai: flex-end);
+    padding-bottom: 64px;
+
+}
+
+.legalContainer {
+    @include setFlex($fd: column, $gap: 8px, $ai: flex-start);
+    font-size: $fSSec;
+    font-weight: 700;
+}
+
+.socialContainer {
+    flex: 1;
+    @include setFlex($jc: space-evenly, $gap: 8px);
+}
+
+.animatedLink {
+    background-color: transparent;
+    border-radius: $stdRadiusBtn;
+    font-size: $fSDefaultBtn;
+    font-weight: 500;
+    padding: $stdPaddingBtn;
+    transition: $stdTransition;
+    color: $clrBaseBright;
+    border: 1px solid $clrBaseBright;
+    transition: $stdTransition;
+
+    &:hover {
+        background-color: $clrHighlight2;
+    }
+}

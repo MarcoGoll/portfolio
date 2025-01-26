@@ -10,7 +10,7 @@ header {
     @include setFlex();
 }
 
-.headerContent {
+#headerContent {
     @include setFlex($jc: space-between);
 
 }
