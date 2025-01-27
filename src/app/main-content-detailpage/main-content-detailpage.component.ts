@@ -15,8 +15,7 @@ import { HeaderComponent } from "../shared/components/header/header.component";
 })
 export class MainContentDetailpageComponent {
   projectData = inject(ProjectDataService);
-  urlID: any;
-  urlID$: any;
+  urlID: string | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,14 +24,9 @@ export class MainContentDetailpageComponent {
 
 
   ngOnInit() {
-    this.urlID = this.route.snapshot.paramMap.get('id');
-    // this.urlID$ = this.route.paramMap.pipe(
-    //   switchMap((params: ParamMap) =>
-    //     this.urlID = params.get('id')!)
-    // );
-
-    console.log(this.urlID);
-    console.log(this.urlID$);
+    this.route.paramMap.subscribe(params => {
+      this.urlID = params.get('id');
+    });
   }
 
   gotoLandingpage() {

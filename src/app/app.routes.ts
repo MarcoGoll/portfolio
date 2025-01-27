@@ -9,5 +9,4 @@ export const routes: Routes = [
     { path: 'detail/:id', component: MainContentDetailpageComponent },
     { path: 'legal', component: LegalNoticeComponent },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent },
-
 ];
