@@ -57,15 +57,15 @@ button {
 
 .cta {
     color: $clrBaseBright;
-    border-top: 1px solid $clrHighlight3;
-    border-left: 1px solid $clrHighlight3;
-    border-bottom: 5px solid $clrHighlight3;
-    border-right: 4px solid $clrHighlight3;
-    background-color: $clrHighlight3Transparent;
+    border-top: 1px solid $clrBaseBright;
+    border-left: 1px solid $clrBaseBright;
+    border-bottom: 5px solid $clrBaseBright;
+    border-right: 4px solid $clrBaseBright;
+    background-color: $clrHighlight3;
 
     &:hover {
         border: 1px solid $clrBaseBright;
-        background-color: $clrHighlight3;
+        background-color: $clrHighlight2;
     }
 }
 

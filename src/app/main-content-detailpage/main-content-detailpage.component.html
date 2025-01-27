@@ -1,8 +1,7 @@
 <section id="detailsSection">
     <div id="detailsSectionContent" class="contentLimit">
         @for (project of projectData.projects; track $index) {
-        @if(project.id == "sharkie"){
-        <!-- TODO: Bedingung (id value) muss in URL mitkommen und hier ausgelesen werden-->
+        @if(project.id == urlID){
         <div class="goBackContainer">
             <img src="./assets/images/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
                 alt="Back Arrow">
@@ -49,7 +48,8 @@
             </div>
         </div>
         <div class="goNextContainer">
-            <a routerLink="">Next Project</a>
+            <!-- <a [routerLink]="['/detail',nextID(project.index)]">Next Project</a> -->
+            <a [href]="['/detail/'+nextID(project.index)]">Next Project</a>
             <img src="./assets/images/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"
                 alt="Next Arrow">
         </div>

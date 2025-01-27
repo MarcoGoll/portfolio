@@ -10,6 +10,7 @@ export class ProjectDataService {
 
   projects: Project[] = [{
     id: "join",
+    index: 0,
     projectImg: "./assets/images/laptop.png",
     name: "Join",
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
@@ -19,6 +20,7 @@ export class ProjectDataService {
   },
   {
     id: "sharkie",
+    index: 1,
     projectImg: "./assets/images/sharkie.png",
     name: "Sharkie",
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
@@ -32,6 +34,7 @@ export class ProjectDataService {
   },
   {
     id: "pokedex",
+    index: 2,
     projectImg: "./assets/images/pokedex.png",
     name: "Pokedex",
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",

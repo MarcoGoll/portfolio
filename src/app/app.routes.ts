@@ -6,7 +6,7 @@ import { MainContentDetailpageComponent } from './main-content-detailpage/main-c
 
 export const routes: Routes = [
     { path: '', component: MainContentLandingpageComponent },
-    { path: 'detail', component: MainContentDetailpageComponent },
+    { path: 'detail/:id', component: MainContentDetailpageComponent },
     { path: 'imprint', component: ImprintComponent },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent },
 ];

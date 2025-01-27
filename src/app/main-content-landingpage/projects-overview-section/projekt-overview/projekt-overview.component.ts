@@ -16,6 +16,7 @@ export class ProjektOverviewComponent {
     {
       //DEFAULT VALUE
       id: "",
+      index: 0,
       projectImg: "",
       name: "",
       description: "",
