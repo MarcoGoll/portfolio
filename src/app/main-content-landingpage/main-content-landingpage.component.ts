@@ -5,6 +5,8 @@ import { FeedbackSectionComponent } from './feedback-section/feedback-section.co
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { ProjectsOverviewSectionComponent } from './projects-overview-section/projects-overview-section.component';
 import { SkillSectionComponent } from './skill-section/skill-section.component';
+import { HeaderComponent } from "../shared/components/header/header.component";
+import { FooterComponent } from "../shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-main-content-landingpage',
@@ -15,7 +17,10 @@ import { SkillSectionComponent } from './skill-section/skill-section.component';
     FeedbackSectionComponent,
     HeroSectionComponent,
     ProjectsOverviewSectionComponent,
-    SkillSectionComponent],
+    SkillSectionComponent,
+    HeaderComponent,
+    FooterComponent
+  ],
   templateUrl: './main-content-landingpage.component.html',
   styleUrl: './main-content-landingpage.component.scss'
 })

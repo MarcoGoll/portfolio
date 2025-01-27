@@ -14,6 +14,7 @@
 #contactMeSectionContent {
     @include setFlex($ai: flex-start, $gap: 64px);
     width: 100%;
+    padding-bottom: 300px;
 }
 
 .contactMeIntroductionContainer {

@@ -1,12 +1,8 @@
 @import './../../../../styles.scss';
 
 footer {
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    //height: 110px;
-
+    margin-top: -250px;
+    height: 250px;
     @include setFlex();
 }
 
@@ -19,8 +15,18 @@ footer {
 .legalContainer {
     @include setFlex($fd: column, $gap: 8px, $ai: flex-start);
     font-size: $fSSec;
+    color: $clrBaseBright;
     font-weight: 700;
+
+    &>a {
+        color: $clrHighlight2;
+
+        &:hover {
+            color: $clrHighlight1;
+        }
+    }
 }
+
 
 .socialContainer {
     flex: 1;

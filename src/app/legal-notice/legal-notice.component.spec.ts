@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImprintComponent } from './imprint.component';
+import { LegalNoticeComponent } from './legal-notice.component';
 
-describe('ImprintComponent', () => {
-  let component: ImprintComponent;
-  let fixture: ComponentFixture<ImprintComponent>;
+describe('LegalNoticeComponent', () => {
+  let component: LegalNoticeComponent;
+  let fixture: ComponentFixture<LegalNoticeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImprintComponent]
+      imports: [LegalNoticeComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ImprintComponent);
+    fixture = TestBed.createComponent(LegalNoticeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,11 +4,12 @@ import { IncreaseWidthRepeatDirective } from '../shared/directive/increase-width
 import { Router, ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { HeaderComponent } from "../shared/components/header/header.component";
 
 @Component({
   selector: 'app-main-content-detailpage',
   standalone: true,
-  imports: [IncreaseWidthRepeatDirective, RouterLink],
+  imports: [IncreaseWidthRepeatDirective, RouterLink, HeaderComponent],
   templateUrl: './main-content-detailpage.component.html',
   styleUrl: './main-content-detailpage.component.scss'
 })

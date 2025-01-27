@@ -1,12 +1,13 @@
 import { Routes } from '@angular/router';
 import { MainContentLandingpageComponent } from './main-content-landingpage/main-content-landingpage.component';
-import { ImprintComponent } from './shared/components/imprint/imprint.component';
-import { PrivacyPolicyComponent } from './shared/components/privacy-policy/privacy-policy.component';
 import { MainContentDetailpageComponent } from './main-content-detailpage/main-content-detailpage.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
     { path: '', component: MainContentLandingpageComponent },
     { path: 'detail/:id', component: MainContentDetailpageComponent },
-    { path: 'imprint', component: ImprintComponent },
+    { path: 'legal', component: LegalNoticeComponent },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent },
+
 ];
