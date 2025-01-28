@@ -1,0 +1,12 @@
+{
+    "header": {
+        "aboutMe": "About me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contakt"
+    },
+    "heroSection": {
+        "hello": "hello {{value}}",
+        "title": "Translation Demo"
+    }
+}
