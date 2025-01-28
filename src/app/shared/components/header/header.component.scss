@@ -97,3 +97,71 @@ nav {
     text-decoration: none;
     font-size: 18px;
 }
+
+.hamburgerContainer {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $stdTransition;
+}
+
+.hamburgerContainerToOpen {
+    background-image: url('./../../../../assets/images/06_other/hamburger_Default.svg');
+
+    &:hover {
+        background-image: url('./../../../../assets/images/06_other/hamburger_Default_Hover.svg');
+    }
+}
+
+.hamburgerContainerToClose {
+    background-image: url('./../../../../assets/images/06_other/hamburger_Close.svg');
+
+    &:hover {
+        background-image: url('./../../../../assets/images/06_other/hamburger_Close_hover.svg');
+    }
+}
+
+//################################################### MobileMenue ###################################################
+.mobileMenueContainer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('./../../../../assets/images/01_Background/all/mobileisolatedPaperRips.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100px;
+    transition: $stdTransition;
+    @include setFlex($fd: column, $ai: space-between, $gap: 64px);
+}
+
+.mobileMenueclosed {
+    transform: translateY(-105%);
+}
+
+.mobileMenueHeaderContainer {
+    @include setFlex($jc: space-between);
+}
+
+.mobileMenueNaviContainer {
+    @include setFlex($fd: column, $gap: 32px);
+}
+
+.mobileMenueSocialContainer {
+    @include setFlex($gap: 24px);
+}
+
+.socialMediaIcon {
+    //transition: $stdTransition;
+    transition: all 200ms linear-gradient;
+
+    &:hover {
+        fill: $clrHighlight2;
+    }
+}

@@ -2,15 +2,18 @@ import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ParentFirstChildTopDownDirective } from '../../directive/parent-first-child-top-down.directive';
 import { ParentFirstChildLeftRightDirective } from '../../directive/parent-first-child-left-right.directive';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, ParentFirstChildTopDownDirective, ParentFirstChildLeftRightDirective],
+  imports: [RouterLink, ParentFirstChildTopDownDirective, ParentFirstChildLeftRightDirective, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isHamburgerOpen: boolean = false;
+
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
 
   async ngAfterViewInit(): Promise<void> {
@@ -101,5 +104,9 @@ export class HeaderComponent {
     const rgb = bgColor.match(/\d+/g)?.map(Number) || [255, 255, 255];
     const brightness = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
     return brightness > 128 ? 'black' : 'white';
+  }
+
+  toggleHamburger() {
+    this.isHamburgerOpen = !this.isHamburgerOpen;
   }
 }
