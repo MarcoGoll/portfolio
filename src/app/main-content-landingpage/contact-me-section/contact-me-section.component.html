@@ -15,6 +15,50 @@
             </div>
         </div>
         <div class="contactMeFormContainer">
+            <div class="sealContainer">
+                <svg width="170" height="170" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Kreis mit Hintergrundbild -->
+                    <defs>
+                        <pattern id="bgPattern" patternUnits="userSpaceOnUse" width="200" height="200">
+                            <image href="./assets/images/03_Stickers/00_Round/01_Color option 1- Orange.png" width="200"
+                                height="200" />
+                        </pattern>
+                    </defs>
+                    <circle cx="100" cy="100" r="100" fill="url(#bgPattern)" />
+                    <!-- Umlaufender Text mit mehr Abstand zum Rand -->
+                    <defs>
+                        <path id="textPath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                    </defs>
+                    <text font-size="18" font-family=inherit font-weight="800" letter-spacing="2px" fill="black">
+                        <textPath href="#textPath" startOffset="50%" text-anchor="middle">Marco Gollmer &nbsp; - &nbsp;
+                            Frontendentwickler &nbsp; - &nbsp;</textPath>
+                    </text>
+                    <!-- Logo in der Mitte -->
+                    <g transform="translate(50,50)">
+                        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="17%" y="18%" width="62%" height="71%" fill="rgba(0, 0, 0, 0.2)" rx="5" ry="5" />
+
+                            <rect x="20%" y="20%" width="15%" height="15%" fill="#f7c518" />
+                            <rect x="40%" y="20%" width="18%" height="12%" fill="#3355ff" />
+                            <rect x="60%" y="20%" width="12%" height="18%" fill="#f87a55" />
+                            <rect x="20%" y="50%" width="12%" height="18%" fill="#3355ff" />
+                            <rect x="40%" y="50%" width="15%" height="15%" fill="#f87a55" />
+                            <rect x="60%" y="50%" width="18%" height="12%" fill="#f7c518" />
+                            <rect x="20%" y="70%" width="18%" height="12%" fill="#f87a55" />
+                            <rect x="40%" y="70%" width="12%" height="18%" fill="#f7c518" />
+                            <rect x="60%" y="70%" width="15%" height="15%" fill="#3355ff" />
+                            <defs>
+                                <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feDropShadow dx="5" dy="5" stdDeviation="1" flood-color="black" />
+                                </filter>
+                            </defs>
+                            <text x="50%" y="55%" font-size="40" text-anchor="middle" alignment-baseline="middle"
+                                fill="white" font-family="Kalam" font-weight="700" letter-spacing="2px"
+                                filter="url(#f1)">MG</text>
+                        </svg>
+                    </g>
+                </svg>
+            </div>
             <form id="myForm" class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
                 autocomplete="off">
                 <fieldset class="inputContainer">

@@ -33,6 +33,7 @@
 }
 
 .contactMeFormContainer {
+    position: relative;
     width: 50%;
 }
 
@@ -44,8 +45,6 @@
     @include setFlex($fd: column-reverse, $ai: flex-start, $gap: 2px);
     width: 100%;
 }
-
-
 
 fieldset {
     border-top: 1px solid transparent;
@@ -150,4 +149,12 @@ fieldset {
 .hintAcceptance {
     color: $clrHighlight3;
     font-size: 14px;
+}
+
+.sealContainer {
+    position: absolute;
+    top: -130px;
+    right: 0;
+    width: 170px;
+    transform: rotate(15deg);
 }
