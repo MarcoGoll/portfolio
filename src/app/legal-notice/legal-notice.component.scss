@@ -1,0 +1,23 @@
+@import './../../../src/styles.scss';
+
+#impressumSection {
+    height: 100vh;
+    @include setFlex($ai: flex-start);
+    padding-top: 200px;
+}
+
+#impressumSectionContent {
+    position: relative;
+    @include setFlex($fd: column, $ai: flex-start, $gap: 16px);
+    padding-left: 200px;
+}
+
+.impressumText {
+    font-family: inherit;
+    font-size: $fSDefault;
+}
+
+#aBackLegal {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}

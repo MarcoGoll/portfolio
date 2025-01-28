@@ -1,0 +1,36 @@
+@import './../../../src/styles.scss';
+
+#privacyPolicySection {
+    @include setFlex($ai: flex-start);
+    padding-top: 200px;
+}
+
+#privacyPolicySectionContent {
+    position: relative;
+    @include setFlex($fd: column, $ai: flex-start, $gap: 16px);
+    padding-left: 200px;
+    width: 70ch;
+}
+
+.privacyPolicyText {
+    font-family: inherit;
+    font-size: $fSDefault;
+    @include setFlex($fd: column, $ai: flex-start, $gap: 48px)
+}
+
+.privacyPolicyTextPart {
+    @include setFlex($fd: column, $ai: flex-start, $gap: 16px)
+}
+
+ul {
+    list-style: inside;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#aBackPrivacyPolicy {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}

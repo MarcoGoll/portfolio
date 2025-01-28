@@ -50,6 +50,7 @@ export class ContactMeSectionComponent {
           next: (response) => {
             // here all what should happen after submit
             ngForm.resetForm();
+            this.toggleAcceptanceOfPrivacyPolicy();
           },
           error: (error) => {
             console.error(error);
@@ -60,6 +61,7 @@ export class ContactMeSectionComponent {
       // here all what should happen after submit (TESTMODE)
       console.log('WAS SEND IN TESTMODE => change mailTest to false to change it');
       ngForm.resetForm();
+      this.toggleAcceptanceOfPrivacyPolicy();
     }
   }
 

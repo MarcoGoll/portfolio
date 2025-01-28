@@ -20,7 +20,7 @@ export class ProjectHighlightDirective {
   private removeDnone() {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
-        this.el.nativeElement.children[i].style.transform = "scale(1.2)";
+        this.el.nativeElement.children[i].style.transform = "scale(1.1)";
       }
       if (i > 0) {
         this.el.nativeElement.children[i].classList.remove("d_none");

@@ -65,6 +65,7 @@ button {
 
     &:hover {
         border: 1px solid $clrBaseBright;
+        transform: translateY(4px);
         background-color: $clrHighlight2;
     }
 }
