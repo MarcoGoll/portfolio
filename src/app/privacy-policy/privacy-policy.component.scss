@@ -3,6 +3,7 @@
 #privacyPolicySection {
     @include setFlex($ai: flex-start);
     padding-top: 200px;
+    background-color: white;
 }
 
 #privacyPolicySectionContent {

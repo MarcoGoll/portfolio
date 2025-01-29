@@ -6,11 +6,12 @@ import {
   TranslateDirective
 } from "@ngx-translate/core";
 import { GoTopDirective } from './shared/directive/go-top.directive';
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TranslatePipe, TranslateDirective, GoTopDirective],
+  imports: [RouterOutlet, TranslatePipe, TranslateDirective, GoTopDirective, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -4,6 +4,7 @@
     height: 100vh;
     @include setFlex($ai: flex-start);
     padding-top: 200px;
+    background-color: white;
 }
 
 #impressumSectionContent {

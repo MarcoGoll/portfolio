@@ -39,6 +39,8 @@ header {
     @include setFlex();
     width: 110px;
     height: 50px;
+    mix-blend-mode: difference;
+    color: $clrBaseDark;
 }
 
 .topDownContainer {
