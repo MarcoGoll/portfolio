@@ -6,7 +6,7 @@
                     alt="yellow ripped paper">
                 <div class="textStripeContainer">
                     <img class="iconStripe" src="./assets/images/04_Icons/stateLocation.svg" alt="Location Icon">
-                    <p class="textStripe">Based in Dresden</p>
+                    <p class="textStripe">{{ 'aboutMeSection.yellowStripeText' | translate}}</p>
                 </div>
             </div>
             <div id="stripeBlue" class="imgContainer">
@@ -14,7 +14,7 @@
                     alt="blue ripped paper">
                 <div class="textStripeContainer">
                     <img class="iconStripe" src="./assets/images/04_Icons/statusRemote.svg" alt="Location Icon">
-                    <p class="textStripe">Teamplayer</p>
+                    <p class="textStripe">{{ 'aboutMeSection.blueStripeText' | translate}}</p>
                 </div>
             </div>
             <div id="stripeOrange" class="imgContainer">
@@ -22,26 +22,22 @@
                     alt="orange ripped paper">
                 <div class="textStripeContainer">
                     <img class="iconStripe" src="./assets/images/04_Icons/statusRemote.svg" alt="Location Icon">
-                    <p class="textStripe">Open to work remote</p>
+                    <p class="textStripe">{{ 'aboutMeSection.orangeStripeText' | translate}}</p>
                 </div>
             </div>
         </div>
         <div class="textContainer">
             <div class="h2Container">
-                <p class="introductionText">WHO'S MARCO?</p>
-                <h2>About me</h2>
+                <p class="introductionText">{{ 'aboutMeSection.introductionText' | translate}}</p>
+                <h2>{{ 'aboutMeSection.h2' | translate}}</h2>
                 <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
                     <img id="fadeInImageAboutMe"
                         src="./assets/images/00_Hand-drawn lines/01_About me/Color option 1.png" alt="Underline">
                 </div>
             </div>
-            <p>Hi there! I'm Marco, a frontend developer passionate about creating intuitive and efficient digital
-                experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in
-                transforming complex concepts into visually appealing and functional web solutions.<br><br>
-                Let’s collaborate and build something remarkable together!
-            </p>
+            <p [innerHTML]="'aboutMeSection.aboutMeText' | translate"></p>
             <div class="btnContainer">
-                <a href="#contactMeSection" class="btnBlack abtn">Let's talk</a>
+                <a href="#contactMeSection" class="btnBlack abtn">{{'aboutMeSection.btnText' | translate}}</a>
             </div>
         </div>
     </div>

@@ -13,14 +13,27 @@ $stdPaddingBtn: 12px 24px;
 
 $stdTransition: all 200ms ease-in-out;
 
+//Font-size (fs) + Font-weight (fw)
+//Desktop
+$fsH2: 64px;
+$fsH3: 24px;
 $fSDefault: 20px;
 $fSSec: 18px;
 $fSTer: 12px;
 $fSDefaultBtn: 18px;
+
+$fwH2: 700;
+$fwH3: 700;
 $fWDefault: 400;
 
+//Mobile
+$fsMobileH2: 48px;
+$fsMobileH3: 20px;
 $fSMobileDefault: 18px;
 $fSMobileSec: 16px;
 $fSMobileTer: 12px;
 $fSMobileDefaultBtn: 18px;
+
+$fwMobileH2: 700;
+$fwMobileH3: 700;
 $fWMobileDefault: 400;

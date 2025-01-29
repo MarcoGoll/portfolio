@@ -7,5 +7,14 @@
     },
     "heroSection": {
         "contact": "Kontakt"
+    },
+    "aboutMeSection": {
+        "introductionText": "WER IST MARCO?",
+        "h2": "Über mich",
+        "aboutMeText": "Hi! Ich bin Marco, ein Frontend-Entwickler mit einer Leidenschaft für die Erstellung intuitiver und effizienter digitaler Erlebnisse. Mit einer natürlichen Problemlösungsmentalität und einem scharfen Auge fürs Detail bin ich darauf spezialisiert, komplexe Konzepte in visuell ansprechende und funktionale Weblösungen zu verwandeln - lass uns zusammenarbeiten und gemeinsam etwas Bemerkenswertes erschaffen!",
+        "btnText": "Lass uns reden",
+        "yellowStripeText": "Aus Dresden",
+        "blueStripeText": "Teamplayer",
+        "orangeStripeText": "Offen für Remote-Arbeit"
     }
 }

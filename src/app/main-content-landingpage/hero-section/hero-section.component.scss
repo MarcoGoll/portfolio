@@ -95,7 +95,7 @@
 
 .socialMediaContainer {
     position: absolute;
-    left: 0;
+    left: 16px;
     bottom: 0;
     @include setFlex($fd: column, $gap: 8px);
 }

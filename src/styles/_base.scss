@@ -1,13 +1,13 @@
 @import './variables';
 
 h2 {
-    font-size: 64px;
-    font-weight: 700;
+    font-size: $fsH2;
+    font-weight: $fwH2;
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: $fsH3;
+    font-weight: $fwH3;
 }
 
 a {
@@ -106,4 +106,16 @@ textarea {
     background-color: transparent;
     border: none;
     outline: none;
+}
+
+@media(max-width: 767px) {
+    h2 {
+        font-size: $fsMobileH2;
+        font-weight: $fwMobileH2;
+    }
+
+    h3 {
+        font-size: $fsMobileH3;
+        font-weight: $fwMobileH3;
+    }
 }

@@ -17,6 +17,11 @@
     @include setFlex($jc: flex-start);
 }
 
+.imgContainer {
+    position: relative;
+    @include setFlex();
+}
+
 #stripeYellow {
     position: absolute;
     top: 25%;
@@ -37,10 +42,6 @@
     transform: rotate(4deg);
 }
 
-.imgContainer {
-    position: relative;
-    @include setFlex();
-}
 
 .textStripeContainer {
     color: $clrBaseBright;
@@ -51,9 +52,17 @@
     right: 0;
 }
 
+.imageStripe {
+    width: 560px
+}
+
 .textContainer {
     @include setFlex($fd: column, $jc: flex-start, $ai: flex-start, $gap: 64px);
     width: 50%;
+}
+
+.introductionText {
+    font-weight: 500;
 }
 
 .btnContainer {
@@ -62,9 +71,7 @@
     @include setFlex($jc: flex-end);
 }
 
-.imageStripe {
-    width: 560px
-}
+
 
 .fadeInLeftRightContainer {
     width: 320px;

@@ -7,5 +7,14 @@
     },
     "heroSection": {
         "contact": "Get in Touch"
+    },
+    "aboutMeSection": {
+        "introductionText": "WHO'S MARCO?",
+        "h2": "About me",
+        "aboutMeText": "Hi there! I'm Marco, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions.<br><br> Let’s collaborate and build something remarkable together!",
+        "btnText": "Let's talk",
+        "yellowStripeText": "Based in Dresden",
+        "blueStripeText": "Teamplayer",
+        "orangeStripeText": "Open to work remote"
     }
 }
