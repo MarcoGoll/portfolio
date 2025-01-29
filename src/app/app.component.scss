@@ -17,7 +17,8 @@
 }
 
 #goTopBtn:hover {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: $clrHighlight3;
+    // (255, 0, 0, 0.8);
     /* Add a dark-grey background on hover */
     transform: scale(1.1);
 }

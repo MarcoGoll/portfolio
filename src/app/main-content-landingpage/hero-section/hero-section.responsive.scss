@@ -1,0 +1,92 @@
+@import './../../../styles.scss';
+
+@media (max-width: 950px) {
+    .heroMainArea {
+        margin-top: 2vh;
+    }
+
+    .helloWorld {
+        font-size: $fSMobileDefaultBtn;
+    }
+
+    .heroLetter {
+        font-size: 104px;
+    }
+
+    .polaroidContainer {
+        top: auto;
+        bottom: -50px;
+        right: auto;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroLetter {
+        font-size: 88px;
+    }
+
+    .socialMediaContainer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .heroMainArea {
+        margin-top: 2vh;
+    }
+
+    .helloWorld {
+        font-size: $fSMobileDefaultBtn;
+    }
+
+    .heroLetter {
+        font-size: 88px;
+    }
+
+    .socialMediaContainer {
+        display: none;
+    }
+
+    .polaroidContainer {
+        top: auto;
+        bottom: -50px;
+        right: auto;
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .heroLetter {
+        font-size: 72px;
+    }
+
+    .polaroidContainer {
+        top: auto;
+        bottom: -10px;
+        right: auto;
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .heroLetter {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 400px) {
+    .heroLetter {
+        font-size: 48px;
+    }
+
+    .heroMainArea__start {
+        gap: 16px;
+    }
+
+    .heroMainArea__end {
+        gap: 16px;
+    }
+}
