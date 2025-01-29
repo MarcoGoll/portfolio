@@ -69,7 +69,8 @@
                     </div>
                     <input #name="ngModel" [(ngModel)]="contactData.name" class="contactMeForm__input" type="text"
                         id="name" name="name" placeholder="Your name goes here" required>
-                    <label class="contactMeForm__label" for="name">What's your Name?</label>
+                    <label class="contactMeForm__label" for="name"
+                        [ngClass]="{'clrError': !name.valid && name.touched}">What's your Name?</label>
                 </fieldset>
 
                 <fieldset class="inputContainer">
@@ -81,7 +82,8 @@
                     <input #email="ngModel" [(ngModel)]="contactData.email" class="contactMeForm__input" type="text"
                         id="email" name="email" placeholder="yourmail@email.com" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                    <label class="contactMeForm__label" for="email">What's your email?</label>
+                    <label class="contactMeForm__label" for="email"
+                        [ngClass]="{'clrError': !email.valid && email.touched}">What's your email?</label>
                 </fieldset>
 
                 <fieldset class="inputContainer">
@@ -92,7 +94,8 @@
                     </div>
                     <input #message="ngModel" [(ngModel)]="contactData.message" class="contactMeForm__input" type="text"
                         id="message" name="message" placeholder="Hello Marco, I am interested in.." required>
-                    <label class="contactMeForm__label" for="message">How can I help you?</label>
+                    <label class="contactMeForm__label" for="message"
+                        [ngClass]="{'clrError': !message.valid && message.touched}">How can I help you?</label>
                 </fieldset>
 
                 <div class="confirmContainer">

@@ -62,6 +62,7 @@ export class ContactMeSectionComponent {
       console.log('WAS SEND IN TESTMODE => change mailTest to false to change it');
       ngForm.resetForm();
       this.toggleAcceptanceOfPrivacyPolicy();
+      this.isHintNecessary = false;
     }
   }
 
