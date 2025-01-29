@@ -100,6 +100,7 @@ nav {
 }
 
 .hamburgerContainer {
+    display: none;
     width: 32px;
     height: 32px;
     margin-right: 24px;
@@ -169,4 +170,5 @@ nav {
 
 .languageSwitchContainer {
     color: $clrBaseBright;
+    margin-right: 32px;
 }

@@ -17,7 +17,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
     TranslatePipe,
     TranslateDirective],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss', './header.responsive.scss']
 })
 export class HeaderComponent {
   isHamburgerOpen: boolean = false;

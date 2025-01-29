@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
   TranslateService,
   TranslatePipe,
   TranslateDirective
 } from "@ngx-translate/core";
+import { GoTopDirective } from './shared/directive/go-top.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet, TranslatePipe, TranslateDirective, GoTopDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -20,5 +21,13 @@ export class AppComponent {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
+  }
+
+  /**
+* When the user clicks on the button, scroll to the top of the document
+*/
+  topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 }
