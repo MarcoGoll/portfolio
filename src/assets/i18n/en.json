@@ -6,7 +6,6 @@
         "contact": "Contakt"
     },
     "heroSection": {
-        "hello": "hello {{value}}",
-        "title": "Translation Demo"
+        "contact": "Get in Touch"
     }
 }
