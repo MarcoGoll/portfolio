@@ -99,11 +99,17 @@
                 </div>
             </div>
             <div class="mobileMenueNaviContainer">
-                <a class="navLink" href="#aboutMeSection" (click)="toggleHamburger()">About me</a>
-                <a class="navLink" href="#skillSection" (click)="toggleHamburger()">Skills</a>
-                <a class="navLink" href="#projectsSection" (click)="toggleHamburger()">Projects</a>
-                <a class="navLink" href="#contactMeSection" (click)="toggleHamburger()">Contact</a>
-                <div class="languageSwitchContainer ">EN ----- DE</div>
+                <a class="navLink" href="#aboutMeSection" (click)="toggleHamburger()">{{ 'header.aboutMe' | translate
+                    }}</a>
+                <a class="navLink" href="#skillSection" (click)="toggleHamburger()">{{ 'header.skills' | translate
+                    }}</a>
+                <a class="navLink" href="#projectsSection" (click)="toggleHamburger()">{{ 'header.projects' |
+                    translate
+                    }}</a>
+                <a class="navLink" href="#contactMeSection" (click)="toggleHamburger()">{{ 'header.contact' |
+                    translate
+                    }}</a>
+                <div class="mobileLanguageSwitchContainer">EN ----- DE</div>
             </div>
             <div class="mobileMenueSocialContainer">
                 <a href="https://www.linkedin.com/in/marco-gollmer-6bb288148/" target="_blank">

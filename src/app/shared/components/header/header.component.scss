@@ -6,8 +6,6 @@ header {
     left: 0;
     right: 0;
     height: 110px;
-    background-color: rgba(0, 0, 0, 0.7);
-
     @include setFlex();
 }
 
@@ -171,4 +169,8 @@ nav {
 .languageSwitchContainer {
     color: $clrBaseBright;
     margin-right: 32px;
+}
+
+.mobileLanguageSwitchContainer {
+    color: $clrBaseBright;
 }
