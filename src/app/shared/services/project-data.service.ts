@@ -19,8 +19,8 @@ export class ProjectDataService {
     index: 0,
     projectImg: "./assets/images/laptop.png",
     name: "Join",
-    // description: "JoinLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
-    description: this.getDescription("products.descriptionProject1"),
+    description: "JoinLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    // description: this.getDescription("products.descriptionProject1"),
     implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     duration: "5 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]

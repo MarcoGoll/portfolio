@@ -12,5 +12,6 @@
 }
 
 .projectContainer {
+    @include setFlex();
     width: 40%;
 }

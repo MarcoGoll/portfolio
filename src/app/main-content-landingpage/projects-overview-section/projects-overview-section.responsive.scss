@@ -1,0 +1,16 @@
+@import './../../../../src/styles.scss';
+
+@media (max-width: 1023px) {
+    #projectsSectionContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+
+    .projectContainer {
+        width: 100%;
+        max-width: 560px;
+    }
+}

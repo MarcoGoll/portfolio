@@ -13,7 +13,7 @@ import { ProjectDataService } from '../../shared/services/project-data.service';
     ProjektOverviewComponent
   ],
   templateUrl: './projects-overview-section.component.html',
-  styleUrl: './projects-overview-section.component.scss'
+  styleUrls: ['./projects-overview-section.component.scss', './projects-overview-section.responsive.scss']
 })
 export class ProjectsOverviewSectionComponent {
 
