@@ -10,9 +10,6 @@ export class ProjectDataService {
 
   constructor(private translate: TranslateService) { }
 
-  description: string = "";
-
-
 
   projects: Project[] = [{
     id: "join",
@@ -20,7 +17,6 @@ export class ProjectDataService {
     projectImg: "./assets/images/laptop.png",
     name: "Join",
     description: "JoinLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
-    // description: this.getDescription("products.descriptionProject1"),
     implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     duration: "5 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]
@@ -55,13 +51,4 @@ export class ProjectDataService {
     ]
   }
   ];
-
-  getDescription(translationKey: string) {
-
-    this.translate.get(_(translationKey)).subscribe((res: string) => {
-      this.description = res;
-    })
-
-    return this.description;
-  }
 }

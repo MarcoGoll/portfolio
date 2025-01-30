@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [ProjectHighlightDirective, RouterLink],
   templateUrl: './projekt-overview.component.html',
-  styleUrl: './projekt-overview.component.scss'
+  styleUrls: ['./projekt-overview.component.scss', './projekt-overview.responsive.scss']
 })
 export class ProjektOverviewComponent {
 

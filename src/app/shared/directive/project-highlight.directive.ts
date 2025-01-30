@@ -10,7 +10,9 @@ export class ProjectHighlightDirective {
   constructor(private el: ElementRef) { }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.removeDnone();
+    if (window.innerWidth > 1023) {
+      this.removeDnone();
+    }
   }
 
   @HostListener('mouseleave') onMouseLeave() {
@@ -20,7 +22,7 @@ export class ProjectHighlightDirective {
   private removeDnone() {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
-        this.el.nativeElement.children[i].style.transform = "scale(1.1)";
+        this.el.nativeElement.children[i].children[0].style.transform = "scale(1.1)";
       }
       if (i > 0) {
         this.el.nativeElement.children[i].classList.remove("d_none");
@@ -31,7 +33,7 @@ export class ProjectHighlightDirective {
   private addDnone() {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
-        this.el.nativeElement.children[i].style.transform = " scale(1)";
+        this.el.nativeElement.children[i].children[0].style.transform = " scale(1)";
       }
       if (i > 0) {
         this.el.nativeElement.children[i].classList.add("d_none");
