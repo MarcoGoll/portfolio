@@ -1,7 +1,7 @@
 <section id="projectsSection">
     <div id="projectsSectionContent" class="contentLimit">
         <app-description-overview class="projectContainer"></app-description-overview>
-        @for (project of projects; track $index) {
+        @for (project of projectData.projects; track $index) {
         <app-projekt-overview [project]="project" class="projectContainer"></app-projekt-overview>
         }
     </div>

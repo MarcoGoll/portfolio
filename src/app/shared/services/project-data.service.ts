@@ -1,19 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../interfaces/project';
+import { TranslateService, _ } from "@ngx-translate/core";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectDataService {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
+
+  description: string = "";
+
+
 
   projects: Project[] = [{
     id: "join",
     index: 0,
     projectImg: "./assets/images/laptop.png",
     name: "Join",
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    // description: "JoinLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+    description: this.getDescription("products.descriptionProject1"),
     implementationDetails: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
     duration: "5 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }]
@@ -48,4 +55,13 @@ export class ProjectDataService {
     ]
   }
   ];
+
+  getDescription(translationKey: string) {
+
+    this.translate.get(_(translationKey)).subscribe((res: string) => {
+      this.description = res;
+    })
+
+    return this.description;
+  }
 }
