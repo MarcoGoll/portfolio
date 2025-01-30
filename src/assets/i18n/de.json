@@ -16,5 +16,11 @@
         "yellowStripeText": "Aus Dresden",
         "blueStripeText": "Teamplayer",
         "orangeStripeText": "Offen für Remote-Arbeit"
+    },
+    "skillSection": {
+        "introductionText": "MEINE FÄHIGKEITEN",
+        "h2": "Skill set",
+        "skillsIntroductionText": "Ich habe Erfahrung in der Entwicklung von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Und mit einer starken Neugierde erforsche ich immer neue Bereiche, um meine Fähigkeiten zu verbessern.",
+        "clickMe": "Klick mich"
     }
 }

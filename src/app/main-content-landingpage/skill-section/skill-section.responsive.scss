@@ -1,0 +1,77 @@
+@import './../../../../src/styles.scss';
+
+@media (max-width: 1245px) {
+    #skillSection {
+        height: auto;
+        padding-top: 88px;
+    }
+
+    #skillSectionContent {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .headerContainer {
+        align-self: flex-end;
+    }
+
+    .skillsOverallContainer {
+        width: auto;
+    }
+
+    .skillsIntroductionContainer {
+        height: auto;
+        min-height: 220px;
+        background-image: url('./../../../assets/images/02_Ripped Paper/1.Skills\ description.png');
+        padding: 32px 16px;
+    }
+
+    .skillsIntroductionContainer>p {
+        padding: 8px;
+    }
+
+    .skillsContainer {
+        justify-content: flex-start;
+        width: auto;
+        gap: 16px;
+    }
+
+    .interestsContainer {
+        margin-top: -10px;
+        height: 400px;
+    }
+
+    .interestContainer {
+        top: 0;
+    }
+}
+
+/*==================================================================================================== 
+    MOBILE L
+==================================================================================================== */
+@media (max-width: 768px) {
+    .h2Container {
+        width: 200px;
+    }
+
+    .skillsIntroductionContainer {
+        min-height: 120px;
+    }
+
+    #fadeInImageSkill {
+        width: 200px;
+    }
+}
+
+/*==================================================================================================== 
+    MOBILE M
+==================================================================================================== */
+@media (max-width: 424px) {
+    .skillsIntroductionContainer {
+        background-image: url('./../../../assets/images/02_Ripped Paper/skillsIntro2.png');
+    }
+
+    .skillsContainer {
+        justify-content: center;
+    }
+}

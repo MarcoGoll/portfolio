@@ -16,5 +16,11 @@
         "yellowStripeText": "Based in Dresden",
         "blueStripeText": "Teamplayer",
         "orangeStripeText": "Open to work remote"
+    },
+    "skillSection": {
+        "introductionText": "MY STACK",
+        "h2": "Skill set",
+        "skillsIntroductionText": "I have gained experience in building projects with a variety of frontend technologies and concepts. With a strong growth mindset, I’m always exploring new areas to enhance my skill set.",
+        "clickMe": "Click to peel"
     }
 }
