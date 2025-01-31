@@ -29,5 +29,24 @@
         "implementationDetails": "Details zur Implementierung",
         "duration": "Entwicklungszeit",
         "nextProject": "Nächstes Projekt"
+    },
+    "contactMeSection": {
+        "introductionText": "KONTAKT AUFNEHMEN",
+        "h2": "Bereit für eine<br>Zusammenarbeit?",
+        "contactMeText": "Kontaktieren Sie mich über dieses Formular, denn ich bin darauf gespannt, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.<br>Ich würde mich freuen, wenn ich Ihnen bei der Erstellung von Webseiten helfen könnte, die Ihren Bedürfnissen entsprechen!",
+        "labelName": "Wie heißt du?",
+        "placeholderName": "Dein Name",
+        "errorTextName": "Huch! Dein Name scheint zu fehlen?",
+        "labelEmail": "Wie lautet deine Email?",
+        "placeholderEmail": "deinemail@email.de",
+        "errorTextEmail": "Hoppla! Deine E-Mail ist erforderlich.",
+        "labelMessage": "Wie kann ich dir helfen?",
+        "placeholderMessage": "Hallo Marco, ich interessiere mich für ..",
+        "errorTextMessage": "Wobei kann ich helfen?",
+        "privacyPolicyPart1": "Ich habe die ",
+        "privacyPolicyLinkText": "Datenschutzerklärung",
+        "privacyPolicyPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "errorPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzerklärung",
+        "sendBtn": "Senden"
     }
 }

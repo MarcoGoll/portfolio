@@ -43,5 +43,24 @@
         "name3": "3. Tobias Lange",
         "position3": "Frontend Developer",
         "profile": "Profile"
+    },
+    "contactMeSection": {
+        "introductionText": "CONTACT ME",
+        "h2": "Ready to work<br> together?",
+        "contactMeText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.<br> Feel free to get in touch with your project details. I'd love the opportunity to help create a website that meets your needs!",
+        "labelName": "What's your Name?",
+        "placeholderName": "Your name goes here",
+        "errorTextName": "Oops! It seems your name is missing?",
+        "labelEmail": "What's your email?",
+        "placeholderEmail": "yourmail@email.com",
+        "errorTextEmail": "Hoppla! Your email is required.",
+        "labelMessage": "How can I help you?",
+        "placeholderMessage": "Hello Marco, I am interested in ...",
+        "errorTextMessage": "What do you need to develop?",
+        "privacyPolicyPart1": "I've read the",
+        "privacyPolicyLinkText": "privacy policy",
+        "privacyPolicyPart2": "and agree to the processing of my data as outlined.",
+        "errorPrivacyPolicy": "Please accept the privacy policy",
+        "sendBtn": "Send"
     }
 }

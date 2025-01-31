@@ -12,6 +12,7 @@
 }
 
 #contactMeSectionContent {
+    position: relative;
     @include setFlex($ai: flex-start, $gap: 64px);
     width: 100%;
     padding-bottom: 300px;
@@ -144,9 +145,10 @@ fieldset {
 
 .sealContainer {
     position: absolute;
-    top: -130px;
+    top: -120px;
     right: 0;
     width: 170px;
+    z-index: 2;
     transform: rotate(15deg);
 }
 

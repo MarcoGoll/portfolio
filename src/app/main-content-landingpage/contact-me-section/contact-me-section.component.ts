@@ -3,12 +3,13 @@ import { Component, inject } from '@angular/core';
 import { IncreaseWidthRepeatDirective } from '../../shared/directive/increase-width-repeat.directive';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-
+import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact-me-section',
   standalone: true,
-  imports: [IncreaseWidthRepeatDirective, FormsModule, CommonModule],
+  imports: [IncreaseWidthRepeatDirective, FormsModule, CommonModule, TranslatePipe,
+    TranslateDirective],
   templateUrl: './contact-me-section.component.html',
   styleUrl: './contact-me-section.component.scss'
 })
@@ -32,7 +33,7 @@ export class ContactMeSectionComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://deineDomain.de/sendMail.php', //TODO: eigene einfügen
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,6 +42,8 @@ export class ContactMeSectionComponent {
       },
     },
   };
+
+  constructor(private translate: TranslateService) { }
 
   onSubmit(ngForm: NgForm) {
     this.isHintNecessary = true;

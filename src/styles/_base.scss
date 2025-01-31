@@ -13,22 +13,6 @@ h3 {
 a {
     cursor: pointer;
     text-decoration: none;
-
-    &:any-link {
-        color: inherit;
-    }
-
-    &:hover {
-        color: inherit;
-    }
-
-    &:active {
-        color: inherit;
-    }
-
-    &:visited {
-        color: inherit;
-    }
 }
 
 .abtn {
