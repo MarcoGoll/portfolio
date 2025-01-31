@@ -24,7 +24,9 @@
 }
 
 .fadeInLeftRightContainer {
-    margin-left: 50%;
+    position: absolute;
+    left: 350px;
+    bottom: 300px;
     width: 260px;
     overflow: hidden;
 }

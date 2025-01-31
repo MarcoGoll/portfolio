@@ -11,7 +11,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
   imports: [IncreaseWidthRepeatDirective, FormsModule, CommonModule, TranslatePipe,
     TranslateDirective],
   templateUrl: './contact-me-section.component.html',
-  styleUrl: './contact-me-section.component.scss'
+  styleUrls: ['./contact-me-section.component.scss', 'contact-me-section.responsive.scss']
 })
 export class ContactMeSectionComponent {
   isAcceptedPrivacyPolicy: boolean = false;

@@ -50,10 +50,6 @@
                 <h2 [innerHTML]="'contactMeSection.h2' | translate"></h2>
             </div>
             <p [innerHTML]="'contactMeSection.contactMeText' | translate"></p>
-            <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
-                <img id="fadeInImageProjects" src="./assets/images/00_Hand-drawn lines/05_Contact/Color option 1.png"
-                    alt="Underline">
-            </div>
         </div>
         <div class="contactMeFormContainer">
             <form id="myForm" class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
@@ -118,6 +114,10 @@
                         [disabled]="!isAcceptedPrivacyPolicy">{{ 'contactMeSection.sendBtn' | translate}}</button>
                 </div>
             </form>
+        </div>
+        <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
+            <img id="fadeInImageProjects" src="./assets/images/00_Hand-drawn lines/05_Contact/Color option 1.png"
+                alt="Underline">
         </div>
     </div>
 </section>

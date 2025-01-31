@@ -1,0 +1,100 @@
+@import './../../../../src/styles.scss';
+
+/*==================================================================================================== 
+    Tablet
+==================================================================================================== */
+@media (max-width: 1023px) {
+    #contactMeSectionContent {
+        flex-direction: column;
+    }
+
+    .contactMeIntroductionContainer {
+        width: 100%;
+    }
+
+    .contactMeFormContainer {
+        width: 100%;
+    }
+
+    .confirmContainer {
+        gap: 48px;
+    }
+
+    .fadeInLeftRightContainer {
+        bottom: 310px;
+        left: 356px;
+        width: 260px;
+    }
+
+    #fadeInImageProjects {
+        width: 260px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .fadeInLeftRightContainer {
+        bottom: 310px;
+        left: 168px;
+        width: 260px;
+    }
+
+    #fadeInImageProjects {
+        width: 260px;
+    }
+}
+
+/*==================================================================================================== 
+    MOBILE L
+==================================================================================================== */
+@media (max-width: 580px) {
+    .sealContainer {
+        width: 120px;
+        top: -130px;
+        right: 8px;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    .fadeInLeftRightContainer {
+        bottom: 310px;
+        left: 56px;
+        width: 220px;
+    }
+
+    #fadeInImageProjects {
+        width: 220px;
+    }
+}
+
+/*==================================================================================================== 
+    MOBILE M
+==================================================================================================== */
+@media (max-width: 424px) {
+    .fadeInLeftRightContainer {
+        bottom: 310px;
+        left: 56px;
+        width: 160px;
+    }
+
+    #fadeInImageProjects {
+        width: 160px;
+    }
+}
+
+/*==================================================================================================== 
+    MOBILE S
+==================================================================================================== */
+@media (max-width: 374px) {
+    .fadeInLeftRightContainer {
+        left: 40px;
+        width: 130px;
+    }
+
+    #fadeInImageProjects {
+        width: 130px;
+    }
+}

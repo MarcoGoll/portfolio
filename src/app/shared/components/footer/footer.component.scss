@@ -1,6 +1,8 @@
 @import './../../../../styles.scss';
 
 footer {
+    position: relative;
+    z-index: 3;
     margin-top: -250px;
     height: 250px;
     @include setFlex();
