@@ -90,11 +90,16 @@
 ==================================================================================================== */
 @media (max-width: 374px) {
     .fadeInLeftRightContainer {
+        bottom: 430px;
         left: 40px;
         width: 130px;
     }
 
     #fadeInImageProjects {
         width: 130px;
+    }
+
+    #contactMeSectionContent {
+        padding-bottom: 420px;
     }
 }

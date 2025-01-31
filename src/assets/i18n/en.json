@@ -62,5 +62,8 @@
         "privacyPolicyPart2": "and agree to the processing of my data as outlined.",
         "errorPrivacyPolicy": "Please accept the privacy policy",
         "sendBtn": "Send"
+    },
+    "footer": {
+        "legalNotice": "Legal Notice"
     }
 }

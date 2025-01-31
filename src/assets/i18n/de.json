@@ -48,5 +48,8 @@
         "privacyPolicyPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "errorPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzerklärung",
         "sendBtn": "Senden"
+    },
+    "footer": {
+        "legalNotice": "Impressum"
     }
 }
