@@ -123,3 +123,13 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+.feedbackLink {
+    &:hover {
+        color: $clrBaseBright;
+
+        .feedbackIcon {
+            fill: $clrBaseBright;
+        }
+    }
+}

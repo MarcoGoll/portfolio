@@ -10,6 +10,8 @@
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
+    transition: $stdTransition;
+
 }
 
 .imageContainer {
@@ -34,11 +36,6 @@
     }
 }
 
-.projectImg {
-    transition: $stdTransition;
-
-}
-
 .liveBtnInImage {
     position: absolute;
     bottom: 30px;
@@ -54,7 +51,6 @@
 }
 
 .btnContainer {
-
     align-self: stretch;
     @include setFlex($jc: flex-end, $gap: 8px);
     display: none;

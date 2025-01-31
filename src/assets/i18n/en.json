@@ -29,5 +29,19 @@
         "implementationDetails": "Implementation Details",
         "duration": "Duration",
         "nextProject": "Next Project"
+    },
+    "feedbackSection": {
+        "introductionText": "IN THEIR WORDS",
+        "h2": "Colleagues' Thoughts",
+        "feedbackText1": "Karl: GREAT, GREATER, AM Greta",
+        "name1": "1. Tobias Lange",
+        "position1": "Frontend Developer",
+        "feedbackText2": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+        "name2": "2. Tobias Lange",
+        "position2": "Frontend Developer",
+        "feedbackText3": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+        "name3": "3. Tobias Lange",
+        "position3": "Frontend Developer",
+        "profile": "Profile"
     }
 }

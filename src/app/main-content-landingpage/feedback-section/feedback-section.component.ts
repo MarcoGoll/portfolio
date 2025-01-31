@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-feedback-section',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe,
+    TranslateDirective],
   templateUrl: './feedback-section.component.html',
-  styleUrl: './feedback-section.component.scss'
+  styleUrls: ['./feedback-section.component.scss', 'feedback-section.resonsive.scss']
 })
 export class FeedbackSectionComponent {
-
+  constructor(private translate: TranslateService) { }
 }

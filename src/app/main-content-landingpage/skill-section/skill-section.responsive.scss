@@ -4,6 +4,7 @@
     #skillSection {
         height: auto;
         padding-top: 88px;
+
     }
 
     #skillSectionContent {
@@ -17,6 +18,8 @@
 
     .skillsOverallContainer {
         width: auto;
+        padding-left: 64px;
+        padding-right: 64px;
     }
 
     .skillsIntroductionContainer {
@@ -46,6 +49,17 @@
     }
 }
 
+@media (max-width: 1023px) {
+    .skillContainer>img {
+        filter: grayscale(0%);
+
+        &:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+    }
+}
+
 /*==================================================================================================== 
     MOBILE L
 ==================================================================================================== */
@@ -61,6 +75,12 @@
     #fadeInImageSkill {
         width: 200px;
     }
+
+    .skillsOverallContainer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }
 
 /*==================================================================================================== 
