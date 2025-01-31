@@ -6,7 +6,7 @@
 }
 
 #projectsSectionContent {
-    @include setFlex($gap: 64px);
+    @include setFlex($ai: flex-start, $gap: 64px);
     flex-wrap: wrap;
     width: 100%;
 }
@@ -14,4 +14,8 @@
 .projectContainer {
     @include setFlex();
     width: 40%;
+}
+
+app-description-overview {
+    align-self: center;
 }

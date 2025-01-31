@@ -55,7 +55,7 @@
 }
 
 .techniquesContainer {
-    @include setFlex($gap: 16px);
+    @include setFlex($jc: flex-start, $gap: 16px);
     flex-wrap: wrap;
 }
 
@@ -91,4 +91,9 @@
         width: 24px;
         height: 24px;
     }
+}
+
+.textInBlendModeBright {
+    mix-blend-mode: difference;
+    color: $clrBaseBright;
 }

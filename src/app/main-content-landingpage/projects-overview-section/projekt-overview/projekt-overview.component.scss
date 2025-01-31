@@ -2,7 +2,6 @@
 
 .projectContainer {
     @include setFlex($fd: column, $gap: 16px, $jc: flex-start, $ai: flex-start);
-    height: 550px;
     max-width: 560px;
 }
 

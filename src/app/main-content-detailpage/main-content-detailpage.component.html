@@ -13,29 +13,29 @@
             <div class="detailsTextContainer">
                 <div class="detailsTextContainer__infos">
                     <div class="h2Container">
-                        <h2>{{project.name}}</h2>
+                        <h2 class="textInBlendModeBright">{{project.name}}</h2>
                         <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
                             <img id="fadeInImageProject"
                                 src="./assets/images/00_Hand-drawn lines/01_About me/Color option 1.png"
                                 alt="Underline">
                         </div>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <h3>{{ 'products.description' | translate}}</h3>
                         <p>{{project.description}}</p>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <h3>{{ 'products.implementationDetails' | translate}}</h3>
                         <p>{{project.implementationDetails}}</p>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <p><b>{{ 'products.duration' | translate}}: </b>{{project.duration}}</p>
                     </div>
                     <div class="techniquesContainer">
                         @for (technique of project.techniques; track $index) {
                         <div class="techniqueContainer">
                             <img src={{technique.techniqueImg}} alt={{technique.technique}}>
-                            <p>{{technique.technique}}</p>
+                            <p class="textInBlendModeBright">{{technique.technique}}</p>
                         </div>
                         }
                     </div>
@@ -69,29 +69,29 @@
             <div class="detailsTextContainer">
                 <div class="detailsTextContainer__infos">
                     <div class="h2Container">
-                        <h2>{{project.name}}</h2>
+                        <h2 class="textInBlendModeBright">{{project.name}}</h2>
                         <div appIncreaseWidthRepeat class="fadeInLeftRightContainer">
                             <img id="fadeInImageProject"
                                 src="./assets/images/00_Hand-drawn lines/01_About me/Color option 1.png"
                                 alt="Underline">
                         </div>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <h3>{{ 'products.description' | translate}}</h3>
                         <p>{{project.description}}</p>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <h3>{{ 'products.implementationDetails' | translate}}</h3>
                         <p>{{project.implementationDetails}}</p>
                     </div>
-                    <div>
+                    <div class="textInBlendModeBright">
                         <p><b>{{ 'products.duration' | translate}}: </b>{{project.duration}}</p>
                     </div>
                     <div class="techniquesContainer">
                         @for (technique of project.techniques; track $index) {
                         <div class="techniqueContainer">
                             <img src={{technique.techniqueImg}} alt={{technique.technique}}>
-                            <p>{{technique.technique}}</p>
+                            <p class="textInBlendModeBright">{{technique.technique}}</p>
                         </div>
                         }
                     </div>
