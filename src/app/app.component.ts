@@ -18,6 +18,7 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 export class AppComponent {
   title = 'portfolio';
 
+
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
@@ -31,4 +32,8 @@ export class AppComponent {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+
+
+
 }

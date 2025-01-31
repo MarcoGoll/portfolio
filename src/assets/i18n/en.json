@@ -24,7 +24,10 @@
         "clickMe": "Click to peel"
     },
     "products": {
-        "description": "TestEN",
-        "descriptionProject1": "Description 1"
+        "goBack": "Go Back",
+        "description": "Description",
+        "implementationDetails": "Implementation Details",
+        "duration": "Duration",
+        "nextProject": "Next Project"
     }
 }

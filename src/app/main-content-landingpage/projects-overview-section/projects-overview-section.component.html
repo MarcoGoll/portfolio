@@ -1,8 +1,15 @@
 <section id="projectsSection">
     <div id="projectsSectionContent" class="contentLimit">
         <app-description-overview class="projectContainer"></app-description-overview>
-        @for (project of projectData.projects; track $index) {
+        @if(projectData.currentLanguage === "en"){
+        @for (project of projectData.projectsEN; track $index) {
         <app-projekt-overview [project]="project" class="projectContainer"></app-projekt-overview>
+        }
+        }
+        @if(projectData.currentLanguage === "de"){
+        @for (project of projectData.projectsDE; track $index) {
+        <app-projekt-overview [project]="project" class="projectContainer"></app-projekt-overview>
+        }
         }
     </div>
 </section>

@@ -4,11 +4,15 @@ import { IncreaseWidthRepeatDirective } from '../shared/directive/increase-width
 import { Router, ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { Project } from '../shared/interfaces/project';
+import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-main-content-detailpage',
   standalone: true,
-  imports: [IncreaseWidthRepeatDirective, RouterLink],
+  imports: [IncreaseWidthRepeatDirective, RouterLink, TranslatePipe,
+    TranslateDirective],
   templateUrl: './main-content-detailpage.component.html',
   styleUrl: './main-content-detailpage.component.scss'
 })
@@ -19,8 +23,8 @@ export class MainContentDetailpageComponent {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private translate: TranslateService
   ) { }
-
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -33,13 +37,27 @@ export class MainContentDetailpageComponent {
   }
 
   nextID(currentIndex: number) {
-    for (let i = 0; i < this.projectData.projects.length; i++) {
-      if (i == this.projectData.projects.length - 1) {
-        return this.projectData.projects[0].id;
-      } else if (this.projectData.projects[i].index == currentIndex) {
-        return this.projectData.projects[i + 1].id;
+    //TODO: Forloop in separate function, to reduce redundant code
+    if (this.projectData.currentLanguage === "en") {
+      for (let i = 0; i < this.projectData.projectsEN.length; i++) {
+        if (i == this.projectData.projectsEN.length - 1) {
+          return this.projectData.projectsEN[0].id;
+        } else if (this.projectData.projectsEN[i].index == currentIndex) {
+          return this.projectData.projectsEN[i + 1].id;
+        }
+      }
+    }
+    if (this.projectData.currentLanguage === "de") {
+      for (let i = 0; i < this.projectData.projectsDE.length; i++) {
+        if (i == this.projectData.projectsDE.length - 1) {
+          return this.projectData.projectsDE[0].id;
+        } else if (this.projectData.projectsDE[i].index == currentIndex) {
+          return this.projectData.projectsDE[i + 1].id;
+        }
       }
     }
   }
 
+
 }
+

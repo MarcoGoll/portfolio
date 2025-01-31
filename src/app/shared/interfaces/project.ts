@@ -6,5 +6,7 @@ export interface Project {
     description: string,
     implementationDetails: string,
     duration: string,
-    techniques: { techniqueImg: string, technique: string }[];
+    techniques: { techniqueImg: string, technique: string }[],
+    linkGitHub: string,
+    linkLive: string
 }

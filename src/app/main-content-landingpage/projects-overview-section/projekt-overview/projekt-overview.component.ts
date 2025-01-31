@@ -22,6 +22,8 @@ export class ProjektOverviewComponent {
       description: "",
       implementationDetails: "",
       duration: "",
-      techniques: [{ techniqueImg: "", technique: "" }]
+      techniques: [{ techniqueImg: "", technique: "" }],
+      linkGitHub: "",
+      linkLive: ""
     }
 }

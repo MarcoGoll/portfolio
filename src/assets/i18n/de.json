@@ -24,7 +24,10 @@
         "clickMe": "Klick mich"
     },
     "products": {
-        "description": "TestEN",
-        "descriptionProject1": "Beschreibung 1"
+        "goBack": "Zurück",
+        "description": "Beschreibung",
+        "implementationDetails": "Details zur Implementierung",
+        "duration": "Entwicklungszeit",
+        "nextProject": "Nächstes Projekt"
     }
 }
