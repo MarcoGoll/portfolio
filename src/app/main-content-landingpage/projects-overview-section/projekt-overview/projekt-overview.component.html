@@ -1,7 +1,11 @@
 <div class="projectContainer">
+    @if (project.featuredProject) {
+    <div class="sealContainer">
+        <img src="./../../assets/images/03_Stickers/00_Round/featuredProject.png" alt="Sticker featured Project">
+    </div>
+    }
     <div appProjectHighlight class="imageContainer">
         <a [routerLink]="['/detail',project.id]"><img class="projectImg" src={{project.projectImg}} alt=""></a>
-
         <a href="#" target="_blank" class="cta abtn liveBtnInImage d_none">Live test</a>
         <a [routerLink]="['/detail',project.id]" class="btnDefault abtn detailsBtnInImage d_none">Project
             details</a>

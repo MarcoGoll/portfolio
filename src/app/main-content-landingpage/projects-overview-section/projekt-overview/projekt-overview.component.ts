@@ -24,6 +24,7 @@ export class ProjektOverviewComponent {
       duration: "",
       techniques: [{ techniqueImg: "", technique: "" }],
       linkGitHub: "",
-      linkLive: ""
+      linkLive: "",
+      featuredProject: false
     }
 }

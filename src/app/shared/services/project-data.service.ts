@@ -30,7 +30,8 @@ export class ProjectDataService {
       { techniqueImg: "./assets/images/04_Icons/scrum.svg", technique: "Scrum" },
     ],
     linkGitHub: "https://github.com/MarcoGoll",
-    linkLive: "https://join.marcogollmer.de"
+    linkLive: "https://join.marcogollmer.de",
+    featuredProject: true
   },
   {
     id: "sharkie",
@@ -46,7 +47,8 @@ export class ProjectDataService {
       { techniqueImg: "./assets/images/04_Icons/js.svg", technique: "JavaScript" }
     ],
     linkGitHub: "https://github.com/MarcoGoll/da_018_sharkie",
-    linkLive: "https://sharkie.marcogollmer.de"
+    linkLive: "https://sharkie.marcogollmer.de",
+    featuredProject: false
   },
   {
     id: "pokedex",
@@ -63,7 +65,8 @@ export class ProjectDataService {
       { techniqueImg: "./assets/images/04_Icons/restapi.svg", technique: "REST API" },
     ],
     linkGitHub: "https://github.com/MarcoGoll/da_015_pokedex",
-    linkLive: "https://pokedex.marcogollmer.de"
+    linkLive: "https://pokedex.marcogollmer.de",
+    featuredProject: false
   }
   ];
 
@@ -77,7 +80,8 @@ export class ProjectDataService {
     duration: "5 Weeks",
     techniques: [{ techniqueImg: "", technique: "" }],
     linkGitHub: "https://github.com/MarcoGoll",
-    linkLive: "https://join.marcogollmer.de"
+    linkLive: "https://join.marcogollmer.de",
+    featuredProject: true
   },
   {
     id: "sharkie",
@@ -93,7 +97,8 @@ export class ProjectDataService {
       { techniqueImg: "./assets/images/04_Icons/js.svg", technique: "JavaScript" }
     ],
     linkGitHub: "https://github.com/MarcoGoll/da_018_sharkie",
-    linkLive: "https://sharkie.marcogollmer.de"
+    linkLive: "https://sharkie.marcogollmer.de",
+    featuredProject: false
   },
   {
     id: "pokedex",
@@ -110,7 +115,8 @@ export class ProjectDataService {
       { techniqueImg: "./assets/images/04_Icons/restapi.svg", technique: "REST API" },
     ],
     linkGitHub: "https://github.com/MarcoGoll/da_015_pokedex",
-    linkLive: "https://pokedex.marcogollmer.de"
+    linkLive: "https://pokedex.marcogollmer.de",
+    featuredProject: false
   }
   ];
 

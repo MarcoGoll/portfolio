@@ -14,7 +14,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
   imports: [IncreaseWidthRepeatDirective, RouterLink, TranslatePipe,
     TranslateDirective],
   templateUrl: './main-content-detailpage.component.html',
-  styleUrl: './main-content-detailpage.component.scss'
+  styleUrls: ['./main-content-detailpage.component.scss', './main-content-detailpage.component.scss']
 })
 export class MainContentDetailpageComponent {
   projectData = inject(ProjectDataService);

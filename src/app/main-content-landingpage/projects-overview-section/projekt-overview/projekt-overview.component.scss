@@ -1,6 +1,7 @@
 @import './../../../../../src/styles.scss';
 
 .projectContainer {
+    position: relative;
     @include setFlex($fd: column, $gap: 16px, $jc: flex-start, $ai: flex-start);
     max-width: 560px;
 }
@@ -33,6 +34,20 @@
 
     &:hover::after {
         opacity: 1;
+    }
+}
+
+.sealContainer {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+
+    >img {
+        width: 100%;
+        height: 100%;
     }
 }
 

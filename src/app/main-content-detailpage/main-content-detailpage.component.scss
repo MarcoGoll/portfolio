@@ -48,19 +48,42 @@
     @include setFlex($fd: column, $ai: flex-start, $gap: 24px);
 }
 
+//TODO: one Class small an tall (and then work with [ngclass])
 .fadeInLeftRightContainer {
-    width: 300px;
+    width: 150px;
     overflow: hidden;
 }
 
 #fadeInImageProject {
     position: relative;
-    width: 300px;
+    width: 150px;
 }
 
 .detailsImageContainer {
+    padding-right: 48px;
+    position: relative;
     align-self: center;
     width: 50%;
+}
+
+.sealContainer {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    right: 0;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(16deg);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        transform: rotate(16deg);
+    }
 }
 
 .techniquesContainer {

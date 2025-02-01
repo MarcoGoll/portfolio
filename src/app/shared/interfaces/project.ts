@@ -9,4 +9,5 @@ export interface Project {
     techniques: { techniqueImg: string, technique: string }[],
     linkGitHub: string,
     linkLive: string
+    featuredProject: boolean;
 }
