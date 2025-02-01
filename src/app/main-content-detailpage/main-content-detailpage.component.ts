@@ -58,6 +58,8 @@ export class MainContentDetailpageComponent {
     }
   }
 
-
+  resetPosition() {
+    window.scroll({ top: 0 })
+  }
 }
 

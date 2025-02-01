@@ -45,6 +45,7 @@ footer {
     color: $clrBaseBright;
     border: 1px solid $clrBaseBright;
     transition: $stdTransition;
+    text-align: center;
 
     &:hover {
         background-color: $clrHighlight2;

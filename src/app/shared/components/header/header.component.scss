@@ -15,8 +15,8 @@ header {
 }
 
 .logoHeaderContainer {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     @include setFlex();
 }
 
@@ -112,6 +112,8 @@ nav {
 }
 
 .hamburgerContainerToOpen {
+    mix-blend-mode: difference;
+    color: $clrBaseBright;
     background-image: url('./../../../../assets/images/06_other/hamburger_Default.svg');
 
     &:hover {

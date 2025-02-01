@@ -1,40 +1,88 @@
 @import './../../styles.scss';
+@media (max-width: 1340px) {
+    .detailsImageContainer {
+        width: 40%;
+    }
 
-/*==================================================================================================== 
-    Tablet
-==================================================================================================== */
-@media (min-width: 768px) and (max-width: 1023px) {}
+    .detailsTextContainer {
+        width: 50%;
+    }
 
-/*==================================================================================================== 
-    MOBILE L
-==================================================================================================== */
-@media (min-width: 425px) and (max-width: 767px) {}
+    .projectImg {
+        width: 100%;
+        height: auto;
+    }
+}
 
-/*==================================================================================================== 
-    MOBILE M
-==================================================================================================== */
-@media (min-width: 375px) and (max-width: 424px) {}
+@media (max-width: 1200px) {
+    .detailsImageContainer {
+        width: 35%;
+    }
 
-/*==================================================================================================== 
-    MOBILE S
-==================================================================================================== */
-@media (max-width: 374px) {
+    .detailsTextContainer {
+        width: 55%;
+    }
+
+    .projectImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1070px) {
 
     #detailsSection {
         height: auto;
         min-height: 100vh;
         background-image: url('./../../assets/images/01_Background/all/noteBbook\ Paper_rotated.png');
-        background-position: center;
+        background-position: top;
+        background-size: cover;
+        padding-bottom: 200px;
     }
 
     #detailsSectionContent {
         position: relative;
-        gap: 24px
+        margin-top: 100px;
+        gap: 32px
+    }
+
+    .detailsContainer {
+        flex-direction: column;
+        gap: 48px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .detailsTextContainer {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .detailsTextContainer__infos {
+        padding-left: 0px;
+        gap: 32px;
+    }
+
+    .detailsImageContainer {
+        padding-right: 0px;
+        position: relative;
+        align-self: center;
+        width: 100%;
+    }
+
+    .sealContainer {
+        display: none;
+    }
+
+    .projectLinks {
+        gap: 24px;
     }
 
     .goBackContainer {
+        padding-left: 16px;
         position: absolute;
-        bottom: 0;
+        bottom: -88px;
         left: 0;
 
         a {
@@ -44,7 +92,7 @@
 
     .goNextContainer {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: -88px;
+        right: 16px;
     }
 }
