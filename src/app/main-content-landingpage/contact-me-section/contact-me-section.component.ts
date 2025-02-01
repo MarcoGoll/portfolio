@@ -4,12 +4,13 @@ import { IncreaseWidthRepeatDirective } from '../../shared/directive/increase-wi
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me-section',
   standalone: true,
   imports: [IncreaseWidthRepeatDirective, FormsModule, CommonModule, TranslatePipe,
-    TranslateDirective],
+    TranslateDirective, RouterLink],
   templateUrl: './contact-me-section.component.html',
   styleUrls: ['./contact-me-section.component.scss', 'contact-me-section.responsive.scss']
 })
@@ -30,10 +31,10 @@ export class ContactMeSectionComponent {
       message: "",
     }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php', //TODO: eigene einfügen
+    endPoint: 'https://marcogollmer.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

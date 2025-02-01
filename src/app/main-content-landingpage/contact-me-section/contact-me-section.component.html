@@ -103,7 +103,8 @@
                                 <img src={{imgPrivacyPolicy}} alt="Confirm Checkbox">
                             </div>
                             <p>{{ 'contactMeSection.privacyPolicyPart1' | translate}} <a id='linkPrivacyPolicy'
-                                    href='privacyPolicy'>{{ 'contactMeSection.privacyPolicyLinkText' | translate}}</a>
+                                    routerLink="privacyPolicy">{{ 'contactMeSection.privacyPolicyLinkText' |
+                                    translate}}</a>
                                 {{ 'contactMeSection.privacyPolicyPart2' | translate}}</p>
                         </div>
                         @if (!isAcceptedPrivacyPolicy && isHintNecessary) {
