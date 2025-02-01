@@ -24,6 +24,9 @@
         "clickMe": "Click to peel"
     },
     "products": {
+        "introductionText": "MY CRAFT",
+        "h2": "Projects",
+        "projectsOverviewText": "Take a look at some of my projects and see my front-end skills in action. Each project highlights my approach to building responsive, user-friendly designs with efficient code.",
         "goBack": "Go Back",
         "description": "Description",
         "implementationDetails": "Implementation Details",

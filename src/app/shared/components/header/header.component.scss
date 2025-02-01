@@ -5,7 +5,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 110px;
+    height: 80px;
     @include setFlex();
 }
 
@@ -21,11 +21,13 @@ header {
 }
 
 .logoSVG {
+    width: 70px;
+    height: 70px;
     transition: $stdTransition;
 
     &:hover {
-        width: 110px;
-        height: 110px;
+        width: 80px;
+        height: 80px;
         transform: rotate(4deg);
     }
 }
@@ -39,8 +41,6 @@ header {
     @include setFlex();
     width: 110px;
     height: 50px;
-    mix-blend-mode: difference;
-    color: $clrBaseDark;
 }
 
 .topDownContainer {
@@ -91,6 +91,7 @@ nav {
     position: relative;
     z-index: 1;
     font-weight: 700;
+    mix-blend-mode: difference;
     color: $clrBaseBright;
 }
 
@@ -160,8 +161,7 @@ nav {
 }
 
 .socialMediaIcon {
-    //transition: $stdTransition;
-    transition: all 200ms linear-gradient;
+    transition: $stdTransition;
 
     &:hover {
         fill: $clrHighlight2;

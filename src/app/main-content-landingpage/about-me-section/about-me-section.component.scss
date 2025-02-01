@@ -61,17 +61,11 @@
     width: 50%;
 }
 
-.introductionText {
-    font-weight: 500;
-}
-
 .btnContainer {
     height: 70px;
     width: 100%;
     @include setFlex($jc: flex-end);
 }
-
-
 
 .fadeInLeftRightContainer {
     width: 320px;

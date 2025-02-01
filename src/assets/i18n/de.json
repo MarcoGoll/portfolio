@@ -24,6 +24,9 @@
         "clickMe": "Klick mich"
     },
     "products": {
+        "introductionText": "MEIN HANDWERK",
+        "h2": "Projekte",
+        "projectsOverviewText": "Hier sind einige der Projekte, die meine Frontend Fähigkeiten in Aktion zeigen. Jedes Projekt unterstreicht meine Herangehensweise an die Erstellung responsiver, benutzerfreundlicher Designs mit effizientem Code.",
         "goBack": "Zurück",
         "description": "Beschreibung",
         "implementationDetails": "Details zur Implementierung",
