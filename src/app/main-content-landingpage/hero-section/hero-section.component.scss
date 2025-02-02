@@ -108,3 +108,9 @@
         fill: $clrHighlight2;
     }
 }
+
+.btnContainer {
+    @include setFlex($jc: flex-end, $ai: flex-end);
+    height: 55px;
+    width: 100%;
+}

@@ -111,8 +111,10 @@
                         <p class="hintAcceptance"> {{ 'contactMeSection.errorPrivacyPolicy' | translate}}</p>
                         }
                     </div>
-                    <button id="sendBtn" class="btnDefault" type="submit" value="Send"
-                        [disabled]="!isAcceptedPrivacyPolicy">{{ 'contactMeSection.sendBtn' | translate}}</button>
+                    <div class="btnContainer">
+                        <button id="sendBtn" class="btnDefault" type="submit" value="Send"
+                            [disabled]="!isAcceptedPrivacyPolicy">{{ 'contactMeSection.sendBtn' | translate}}</button>
+                    </div>
                 </div>
             </form>
         </div>

@@ -65,7 +65,6 @@ button {
 
     &:hover {
         border: 1px solid $clrBaseBright;
-        transform: translateY(4px);
         background-color: $clrHighlight2;
     }
 }
@@ -93,7 +92,6 @@ button {
 
     &:hover {
         color: $clrBaseBright;
-        transform: translate(3px, 4px);
         border: 1px solid $clrBaseDark;
         background-color: $clrHighlight3;
     }

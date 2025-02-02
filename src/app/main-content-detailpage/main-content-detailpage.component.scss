@@ -138,3 +138,9 @@
     mix-blend-mode: difference;
     color: $clrBaseBright;
 }
+
+.btnContainer {
+    height: 55px;
+    width: 130px;
+    @include setFlex($jc: flex-end, $ai: flex-end);
+}

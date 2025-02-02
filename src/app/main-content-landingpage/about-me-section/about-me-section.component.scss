@@ -62,9 +62,9 @@
 }
 
 .btnContainer {
-    height: 70px;
+    height: 55px;
     width: 100%;
-    @include setFlex($jc: flex-end);
+    @include setFlex($jc: flex-end, $ai: flex-end);
 }
 
 .fadeInLeftRightContainer {

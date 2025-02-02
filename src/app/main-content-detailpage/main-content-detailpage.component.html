@@ -99,8 +99,12 @@
                 }
                 <img class="projectImg" src={{project.projectImg}} alt={{project.name}}>
                 <div class="projectLinks">
-                    <a href={{project.linkGitHub}} target="_blank" class="btnDefault abtn">GitHub</a>
-                    <a href={{project.linkLive}} target="_blank" class="cta abtn">Live Test</a>
+                    <div class="btnContainer">
+                        <a href={{project.linkGitHub}} target="_blank" class="btnDefault abtn">GitHub</a>
+                    </div>
+                    <div class="btnContainer">
+                        <a href={{project.linkLive}} target="_blank" class="cta abtn">Live Test</a>
+                    </div>
                 </div>
             </div>
         </div>
