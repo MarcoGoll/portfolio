@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
 export class ContactMeSectionComponent {
   isAcceptedPrivacyPolicy: boolean = false;
   isHintNecessary: boolean = false;
-  isConfirmed: boolean = true;
+  isConfirmed: boolean = false;
   imgPrivacyPolicy: string = "../../../assets/images/06_other/ppCheckDefault.svg";
 
   http = inject(HttpClient);
