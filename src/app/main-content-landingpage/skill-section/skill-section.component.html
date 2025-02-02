@@ -58,18 +58,19 @@
             </div>
         </div>
         <div class="interestsContainer">
-            <div id="interestBefore" class="interestContainer">
+            <div id="interestBefore" class="interestContainer" [ngClass]="{'d_none':isAnimationstarted}"
+                (click)="startInterestAnimation()">
                 <img src="./assets/images/05_Arrows/arrow.png" alt="">
                 <p>{{'skillSection.clickMe'|translate}}</p>
                 <img id="imgInterest1" class="imgInterest"
                     src="./assets/images/03_Stickers/01_Skills - Peel off/Default.png" alt="interest Image1">
             </div>
-            <div id="interestTransition" class="interestContainer">
+            <div id="interestTransition" class="interestContainer" [ngClass]="{'hideslowly':isAnimationstarted}">
                 <img id="imgInterest2" class="imgInterest"
                     src="./assets/images/03_Stickers/01_Skills - Peel off/Transition.png" alt="interest Image2">
             </div>
             <div id="interestAfter" class="interestContainer">
-                <p>Also, I'm interested in diving into:</p>
+                <p>{{'skillSection.interestText'|translate}}</p>
                 <div class="interestTechniques">
                     <div class="interestTechnique">
                         <img src="./assets/images/04_Icons/reactInterest.svg" alt="React">
