@@ -38,6 +38,44 @@
 .contactMeFormContainer {
     position: relative;
     width: 50%;
+    overflow: hidden;
+}
+
+.confirmationContainer {
+    position: absolute;
+    background-image: url('./../../../assets/images/02_Ripped Paper/skillsIntro2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+    @include setFlex();
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    transform: translateX(110%);
+    animation: comeIn 1s ease-in forwards;
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    p {
+        color: $clrBaseDark;
+        text-align: center;
+    }
+}
+
+@keyframes comeIn {
+    0% {
+        transform: translateX(110%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .contactMeForm {
@@ -150,7 +188,7 @@ fieldset {
     top: -120px;
     right: 20px;
     width: 170px;
-    z-index: 2;
+    z-index: 4;
     transform: rotate(15deg);
 }
 

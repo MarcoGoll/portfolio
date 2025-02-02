@@ -52,6 +52,10 @@
             <p [innerHTML]="'contactMeSection.contactMeText' | translate"></p>
         </div>
         <div class="contactMeFormContainer">
+            <div class="" [ngClass]="isConfirmed? 'confirmationContainer':'d_none'">
+                <img src="./assets/images/thumb_up.png" alt="Thump up image">
+                <p>Danke für die Nachricht.<br> Ich melde mich so<br> schnell es geht.</p>
+            </div>
             <form id="myForm" class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
                 autocomplete="off">
                 <fieldset class="inputContainer">
@@ -95,7 +99,6 @@
                         [ngClass]="{'clrError': !message.valid && message.touched}">{{ 'contactMeSection.labelMessage' |
                         translate}}</label>
                 </fieldset>
-
                 <div class="confirmContainer">
                     <div class="privacyPolicyContainer">
                         <div class="privacyPolicyContainer__imgAndText">

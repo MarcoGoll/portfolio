@@ -17,6 +17,7 @@ import { RouterLink } from '@angular/router';
 export class ContactMeSectionComponent {
   isAcceptedPrivacyPolicy: boolean = false;
   isHintNecessary: boolean = false;
+  isConfirmed: boolean = true;
   imgPrivacyPolicy: string = "../../../assets/images/06_other/ppCheckDefault.svg";
 
   http = inject(HttpClient);
@@ -31,7 +32,7 @@ export class ContactMeSectionComponent {
       message: "",
     }
 
-  mailTest = false;
+  mailTest = true;
 
   post = {
     endPoint: 'https://marcogollmer.de/sendMail.php',
@@ -55,6 +56,8 @@ export class ContactMeSectionComponent {
             // here all what should happen after submit
             ngForm.resetForm();
             this.toggleAcceptanceOfPrivacyPolicy();
+            this.isHintNecessary = false;
+            this.isConfirmed = true;
           },
           error: (error) => {
             console.error(error);
@@ -67,6 +70,7 @@ export class ContactMeSectionComponent {
       ngForm.resetForm();
       this.toggleAcceptanceOfPrivacyPolicy();
       this.isHintNecessary = false;
+      this.isConfirmed = true;
     }
   }
 
