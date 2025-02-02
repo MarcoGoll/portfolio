@@ -60,8 +60,31 @@
                     }}</a>
             </div>
         </nav>
-        <div class="languageSwitchContainer"><span (click)="projectData.toggleLanguage('en')">EN</span> ----- <span
-                (click)="projectData.toggleLanguage('de')">DE</span></div>
+        <div class="languageToggleContainer">
+            <div class="languageSelectionContainer">
+                <div class="topDownContainer">
+                    <img class="fadeInImageLanguage"
+                        src="./assets/images/00_Hand-drawn lines/00_Header/Color option 1/toggle.png"
+                        alt="Bild eines Rechtecks">
+                </div>
+                <span appParentFirstChildTopDown [ngClass]="{'languageSelected':currentLanguage==='en'}"
+                    (click)="changeLanguageCheckboxTo(false)">EN</span>
+            </div>
+            <div class="languageToggle">
+                <input type="checkbox" id="languageCheckbox" (click)="setLanguage()" class="languageCheckboxToggle"
+                    [ngModel]="isCheckboxLanguageChecked">
+                <label class="labelAfter" for="languageCheckbox"></label>
+            </div>
+            <div class="languageSelectionContainer">
+                <div class="topDownContainer">
+                    <img class="fadeInImageLanguage"
+                        src="./assets/images/00_Hand-drawn lines/00_Header/Color option 1/toggle.png"
+                        alt="Bild eines Rechtecks">
+                </div>
+                <span appParentFirstChildTopDown [ngClass]="{'languageSelected':currentLanguage==='de'}"
+                    (click)="changeLanguageCheckboxTo(true)">DE</span>
+            </div>
+        </div>
         <div class="hamburgerContainer"
             [ngClass]="{'hamburgerContainerToOpen':!isHamburgerOpen, 'hamburgerContainerToClose':isHamburgerOpen }"
             (click)="toggleHamburger()">
@@ -109,8 +132,31 @@
                 <a class="navLink" href="#contactMeSection" (click)="toggleHamburger()">{{ 'header.contact' |
                     translate
                     }}</a>
-                <div class="mobileLanguageSwitchContainer"><span (click)="projectData.toggleLanguage('en')">EN</span>
-                    ----- <span (click)="projectData.toggleLanguage('de')">DE</span></div>
+                <div class="languageToggleContainerMobile">
+                    <div class="languageSelectionContainer">
+                        <div class="topDownContainer">
+                            <img class="fadeInImageLanguage"
+                                src="./assets/images/00_Hand-drawn lines/00_Header/Color option 1/toggle.png"
+                                alt="Bild eines Rechtecks">
+                        </div>
+                        <span appParentFirstChildTopDown [ngClass]="{'languageSelected':currentLanguage==='en'}"
+                            (click)="changeLanguageCheckboxTo(false)">EN</span>
+                    </div>
+                    <div class="languageToggle">
+                        <input type="checkbox" id="languageCheckboxMobile" (click)="setLanguage()"
+                            class="languageCheckboxToggle" [ngModel]="isCheckboxLanguageChecked">
+                        <label class="labelAfter" for="languageCheckboxMobile"></label>
+                    </div>
+                    <div class="languageSelectionContainer">
+                        <div class="topDownContainer">
+                            <img class="fadeInImageLanguage"
+                                src="./assets/images/00_Hand-drawn lines/00_Header/Color option 1/toggle.png"
+                                alt="Bild eines Rechtecks">
+                        </div>
+                        <span appParentFirstChildTopDown [ngClass]="{'languageSelected':currentLanguage==='de'}"
+                            (click)="changeLanguageCheckboxTo(true)">DE</span>
+                    </div>
+                </div>
             </div>
             <div class="mobileMenueSocialContainer">
                 <a href="https://www.linkedin.com/in/marco-gollmer-6bb288148/" target="_blank">

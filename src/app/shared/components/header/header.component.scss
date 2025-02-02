@@ -178,3 +178,95 @@ nav {
 .mobileLanguageSwitchContainer {
     color: $clrBaseBright;
 }
+
+//################################################### LanguageToggle ##################################################
+.languageToggleContainer,
+.languageToggleContainerMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    mix-blend-mode: difference;
+    color: $clrBaseBright;
+}
+
+.languageSelectionContainer {
+    position: relative;
+    @include setFlex();
+    width: 100%;
+    height: 40px;
+
+    span {
+        cursor: pointer;
+        position: relative;
+        padding: 8px;
+    }
+}
+
+.fadeInImageLanguage {
+    width: 100%;
+    height: 40px;
+}
+
+.languageToggle {
+    @include setFlex($gap: 8px);
+}
+
+input[type="checkbox"].languageCheckboxToggle {
+    /*SELECTOR: input with the type "checkbox" which has the class "languageCheckboxToggle"*/
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: -900;
+}
+
+input[type="checkbox"].languageCheckboxToggle+label {
+    /*SELECTOR: The direct next Label of (input with the type "checkbox" which has the class "languageCheckboxToggle")*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*with the default value "inline" it does not work*/
+    cursor: pointer;
+}
+
+input[type="checkbox"].languageCheckboxToggle+label::before {
+    /*SELECTOR: The before element of the direct next Label of (input with the type "checkbox" which has the class "languageCheckboxToggle")*/
+    content: "";
+    /*kind of requiered when working with ::before and ::after - an empty Content*/
+
+    width: 32px;
+    height: 8px;
+    background-color: $clrHighlight3;
+    border-radius: 1em;
+}
+
+input[type="checkbox"].languageCheckboxToggle+label:hover::before {
+    background-color: $clrHighlight3;
+}
+
+input[type="checkbox"].languageCheckboxToggle+label::after {
+    /*SELECTOR: The after element of the direct next Label of (input with the type "checkbox" which has the class "languageCheckboxToggle")*/
+    position: absolute;
+    left: 0px;
+    content: "";
+    /*kind of requiered when working with ::before and ::after - an empty Content*/
+
+    width: 16px;
+    height: 16px;
+    background-color: $clrHighlight2;
+    border: 1px solid $clrBaseBright;
+    border-radius: 1em;
+    transition: all 150ms ease-in-out;
+}
+
+input[type="checkbox"].languageCheckboxToggle:checked+label::after {
+    /*SELECTOR: The after element of the direct next Label of (input with the type "checkbox" which has the class "languageCheckboxToggle" and only if it is checked)*/
+    left: 16px;
+    background-color: $clrHighlight2;
+    border: 1px solid $clrBaseBright;
+}
+
+.languageSelected {
+    color: $clrHighlight3;
+}

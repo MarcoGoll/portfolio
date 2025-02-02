@@ -120,18 +120,9 @@ export class ProjectDataService {
   }
   ];
 
-
-  toggleLanguage(language: "en" | "de") {
-    this.translate.use(language);
-    this.setCurrentLanguarge(language);
+  changeLanguageTo(value: "en" | "de") {
+    this.currentLanguage = value;
+    this.translate.use(this.currentLanguage);
   }
 
-  setCurrentLanguarge(laguarge: "en" | "de") {
-    this.currentLanguage = laguarge;
-    console.log("NEW LANG: ", this.currentLanguage);
-  }
-
-  getCurrentLanguarge() {
-    return this.currentLanguage;
-  }
 }
