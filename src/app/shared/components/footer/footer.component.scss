@@ -36,18 +36,85 @@ footer {
 }
 
 .animatedLink {
-    background-color: transparent;
-    border-radius: $stdRadiusBtn;
-    font-size: $fSDefaultBtn;
-    font-weight: 500;
-    padding: $stdPaddingBtn;
-    transition: $stdTransition;
-    color: $clrBaseBright;
-    border: 1px solid $clrBaseBright;
-    transition: $stdTransition;
-    text-align: center;
+    @include setFlex($fd: column);
+    position: relative;
+
+    .animatedLinkIcon {
+        position: absolute;
+        top: -35px;
+        right: 50%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+
+    .socialLink {
+        background-color: transparent;
+        border-radius: $stdRadiusBtn;
+        font-size: $fSDefaultBtn;
+        font-weight: 500;
+        padding: $stdPaddingBtn;
+        transition: $stdTransition;
+        color: $clrBaseBright;
+        border: 1px solid $clrBaseBright;
+        transition: $stdTransition;
+        text-align: center;
+    }
 
     &:hover {
-        background-color: $clrHighlight2;
+        .animatedLinkIcon {
+            animation: rotateIn 500ms ease-in-out forwards;
+        }
+
+        .socialLink {
+            background-color: $clrHighlight2;
+        }
+    }
+
+    &:not(:hover) {
+        .animatedLinkIcon {
+            animation: rotateOut 200ms linear forwards;
+        }
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+
+        transform: rotate(180deg);
+        right: 50%;
+        opacity: 0;
+    }
+
+    70% {
+        right: -10px;
+        transform: rotate(400deg);
+        opacity: 1;
+    }
+
+    85% {
+        right: -5px;
+        transform: rotate(380deg);
+        opacity: 1;
+    }
+
+    100% {
+        right: 0;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        right: 0;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: rotate(180deg);
+        right: 50%;
+        opacity: 0;
     }
 }
