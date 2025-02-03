@@ -55,5 +55,12 @@
     },
     "footer": {
         "legalNotice": "Impressum"
+    },
+    "legal": {
+        "h2": "Impressum",
+        "backBtn": "Zurück"
+    },
+    "privacyPolicy": {
+        "backBtn": "Zurück"
     }
 }

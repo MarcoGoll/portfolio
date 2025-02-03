@@ -187,8 +187,6 @@ nav {
     align-items: center;
     gap: 8px;
     padding: 8px;
-    mix-blend-mode: difference;
-    color: $clrBaseBright;
 }
 
 .languageSelectionContainer {
@@ -201,6 +199,8 @@ nav {
         cursor: pointer;
         position: relative;
         padding: 8px;
+        mix-blend-mode: difference;
+        color: $clrBaseBright;
     }
 }
 

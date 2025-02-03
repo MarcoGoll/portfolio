@@ -5,7 +5,9 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
 @Component({
   selector: 'app-about-me-section',
   standalone: true,
-  imports: [IncreaseWidthRepeatDirective, TranslatePipe,
+  imports: [
+    IncreaseWidthRepeatDirective,
+    TranslatePipe,
     TranslateDirective],
   templateUrl: './about-me-section.component.html',
   styleUrls: ['./about-me-section.component.scss', './about-me-section.responsive.scss']

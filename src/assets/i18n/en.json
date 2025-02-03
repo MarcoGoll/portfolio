@@ -69,5 +69,12 @@
     },
     "footer": {
         "legalNotice": "Legal Notice"
+    },
+    "legal": {
+        "h2": "Legal notice",
+        "backBtn": "Back"
+    },
+    "privacyPolicy": {
+        "backBtn": "Back"
     }
 }
