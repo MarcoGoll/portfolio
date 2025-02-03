@@ -8,9 +8,10 @@ import { TranslateService, _ } from "@ngx-translate/core";
 })
 export class ProjectDataService {
   currentLanguage: "en" | "de" = "en";
-
-  constructor(private translate: TranslateService) { }
-
+  currentProjectsArray: Project[] | null = [];
+  constructor(private translate: TranslateService) {
+    this.currentProjectsArray = this.projectsEN;
+  }
 
   projectsEN: Project[] = [{
     id: "join",
@@ -123,6 +124,14 @@ export class ProjectDataService {
   changeLanguageTo(value: "en" | "de") {
     this.currentLanguage = value;
     this.translate.use(this.currentLanguage);
+    if (value === "en") {
+      this.currentProjectsArray = this.projectsEN;
+    }
+    if (value === "de") {
+      this.currentProjectsArray = this.projectsDE;
+    }
+    console.log(this.currentProjectsArray);
+
   }
 
 }

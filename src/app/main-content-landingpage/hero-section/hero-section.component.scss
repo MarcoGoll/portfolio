@@ -102,7 +102,7 @@
 
 .socialMediaIcon {
     fill: transparent;
-    transition: all 500ms ease-in-out;
+    transition: $stdTransition;
 
     &:hover {
         fill: $clrHighlight2;
