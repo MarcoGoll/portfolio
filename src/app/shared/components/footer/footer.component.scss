@@ -55,9 +55,9 @@ footer {
         padding: $stdPaddingBtn;
         transition: $stdTransition;
         color: $clrBaseBright;
-        border: 1px solid $clrBaseBright;
         transition: $stdTransition;
         text-align: center;
+        width: 100%;
     }
 
     &:hover {
