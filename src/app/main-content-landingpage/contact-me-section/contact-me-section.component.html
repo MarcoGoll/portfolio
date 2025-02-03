@@ -54,7 +54,7 @@
         <div class="contactMeFormContainer">
             <div class="" [ngClass]="isConfirmed? 'confirmationContainer':'d_none'">
                 <img src="./assets/images/thumb_up.png" alt="Thump up image">
-                <p>Danke für die Nachricht.<br> Ich melde mich so<br> schnell es geht.</p>
+                <p [innerHTML]="'contactMeSection.confirmMessage' | translate"></p>
             </div>
             <form id="myForm" class="contactMeForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
                 autocomplete="off">

@@ -51,7 +51,8 @@
         "privacyPolicyLinkText": "Datenschutzerklärung",
         "privacyPolicyPart2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "errorPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzerklärung",
-        "sendBtn": "Senden"
+        "sendBtn": "Senden",
+        "confirmMessage": "Danke für die Nachricht.<br> Ich melde mich so<br> schnell es geht."
     },
     "footer": {
         "legalNotice": "Impressum"

@@ -70,6 +70,10 @@
     width: 96px;
     height: 98px;
     @include setFlex($fd: column);
+
+    p {
+        text-align: center;
+    }
 }
 
 .skillContainer>img {
@@ -101,6 +105,7 @@
 
 
 #interestBefore {
+    cursor: pointer;
     font-family: 'Kalam', Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -176,4 +181,10 @@
     100% {
         opacity: 0;
     }
+}
+
+.btnContainer {
+    height: 55px;
+    width: 100%;
+    @include setFlex($jc: flex-end, $ai: flex-end);
 }

@@ -3,7 +3,7 @@
         "aboutMe": "About me",
         "skills": "Skills",
         "projects": "Projects",
-        "contact": "Contakt"
+        "contact": "Contact"
     },
     "heroSection": {
         "contact": "Get in Touch"
@@ -65,7 +65,8 @@
         "privacyPolicyLinkText": "privacy policy",
         "privacyPolicyPart2": "and agree to the processing of my data as outlined.",
         "errorPrivacyPolicy": "Please accept the privacy policy",
-        "sendBtn": "Send"
+        "sendBtn": "Send",
+        "confirmMessage": "Thanks for the message.<br> I'll get back to you<br> as soon as possible."
     },
     "footer": {
         "legalNotice": "Legal Notice"
