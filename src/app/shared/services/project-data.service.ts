@@ -130,8 +130,6 @@ export class ProjectDataService {
     if (value === "de") {
       this.currentProjectsArray = this.projectsDE;
     }
-    console.log(this.currentProjectsArray);
-
   }
 
 }

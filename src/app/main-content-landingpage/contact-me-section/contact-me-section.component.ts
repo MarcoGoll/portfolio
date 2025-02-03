@@ -32,7 +32,7 @@ export class ContactMeSectionComponent {
       message: "",
     }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://marcogollmer.de/sendMail.php',
@@ -66,7 +66,6 @@ export class ContactMeSectionComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // here all what should happen after submit (TESTMODE)
-      console.log('WAS SEND IN TESTMODE => change mailTest to false to change it');
       ngForm.resetForm();
       this.toggleAcceptanceOfPrivacyPolicy();
       this.isHintNecessary = false;

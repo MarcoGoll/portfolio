@@ -11,6 +11,7 @@
     position: relative;
     @include setFlex($fd: column, $ai: flex-start, $gap: 16px);
     padding-left: 200px;
+    padding-bottom: 100px;
 }
 
 .impressumText {
@@ -19,6 +20,13 @@
 }
 
 #aBackLegal {
-    margin-top: 50px;
-    margin-bottom: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.btnContainer {
+    position: relative;
+    height: 55px;
+    width: 100px;
 }
