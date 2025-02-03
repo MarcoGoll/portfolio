@@ -9,6 +9,7 @@
 .projectImg {
     width: 100%;
     height: 400px;
+    min-height: 2600px;
     object-fit: cover;
     border-radius: 20px;
     transition: $stdTransition;
@@ -69,4 +70,28 @@
     align-self: stretch;
     @include setFlex($jc: flex-end, $gap: 8px);
     display: none;
+}
+
+.animatedIMG {
+    animation: moveUpDownInfinite 5s ease-in-out infinite;
+    object-fit: contain;
+}
+
+@keyframes moveUpDownInfinite {
+    0% {
+        transform: translateY(0px);
+    }
+
+
+
+    50% {
+        transform: translateY(-30px);
+
+    }
+
+
+
+    100% {
+        transform: translateY(0px);
+    }
 }
