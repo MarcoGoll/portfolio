@@ -66,7 +66,7 @@
         "privacyPolicyPart2": "and agree to the processing of my data as outlined.",
         "errorPrivacyPolicy": "Please accept the privacy policy",
         "sendBtn": "Send",
-        "confirmMessage": "Thanks for the message.<br> I'll get back to you<br> as soon as possible."
+        "confirmationText": "Thanks for the message.<br> I'll get back to you<br> as soon as possible."
     },
     "footer": {
         "legalNotice": "Legal Notice"
@@ -80,7 +80,7 @@
         "effectiveDate": "Effective Date: 01.01.2025",
         "introductionText": "Thank you for visiting my portfolio website. Protecting your personal data is very important to me. This Privacy Policy outlines how your information is handled when you use this website.",
         "h3_ResponsibleforDataProcessing": "1. Who is Responsible for Data Processing?",
-        "text_ResponsibleforDataProcessing": "The data controller for this website is:<br><br>Name: Marco Gollmer<br>Email: <a href='mailto:Marco.Gollmer&#64;outlook.de'>Marco.Gollmer&#64;outlook.de</a><br><br>If you have any questions regarding this Privacy Policy, please feel free to contact me via email.",
+        "text_ResponsibleforDataProcessing": "The data controller for this website is:<br><br>Name: Marco Gollmer<br>Email: <a href='mailto:kontakt&#64;marcogollmer.de'>kontakt&#64;marcogollmer.de</a><br><br>If you have any questions regarding this Privacy Policy, please feel free to contact me via email.",
         "h3_WhichDataCollected": "2. What Data is Collected?",
         "text_WhichDataCollected": "This website does not collect or store any personal data. If you contact me via email, I will process the information you provide, such as:",
         "Data_WhichDataCollected": "<li>Your name</li><li>Your email address</li><li>The content of your message</li>",
