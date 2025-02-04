@@ -3,15 +3,19 @@
 #impressumSection {
     height: 100vh;
     @include setFlex($ai: flex-start);
-    padding-top: 200px;
+    background-image: url('./../../../src/assets/images/01_Background/all/isolatedPaperRips.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 150px;
     background-color: white;
 }
 
 #impressumSectionContent {
     position: relative;
-    @include setFlex($fd: column, $ai: flex-start, $gap: 16px);
-    padding-left: 200px;
+    @include setFlex($fd: column, $ai: center, $gap: 48px);
     padding-bottom: 100px;
+    color: $clrBaseBright;
 }
 
 .impressumText {
@@ -29,4 +33,8 @@
     position: relative;
     height: 55px;
     width: 100px;
+}
+
+.emailLink {
+    color: $clrHighlight2;
 }

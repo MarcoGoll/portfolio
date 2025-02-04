@@ -7,7 +7,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
   imports: [TranslatePipe,
     TranslateDirective],
   templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  styleUrls: ['./legal-notice.component.scss']
 })
 export class LegalNoticeComponent {
   constructor(private translate: TranslateService) { }

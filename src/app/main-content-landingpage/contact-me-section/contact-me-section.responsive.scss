@@ -72,6 +72,11 @@
     .confirmationContainer {
         background-image: url('./../../../assets/images/02_Ripped Paper/skillsIntro2rotated.png');
         flex-direction: column;
+
+        .closeContainer {
+            top: 15%;
+            right: 28%
+        }
     }
 
 
