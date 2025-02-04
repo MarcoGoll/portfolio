@@ -76,6 +76,31 @@
         "backBtn": "Back"
     },
     "privacyPolicy": {
+        "h2": "Privacy Policy",
+        "effectiveDate": "Effective Date: 01.01.2025",
+        "introductionText": "Thank you for visiting my portfolio website. Protecting your personal data is very important to me. This Privacy Policy outlines how your information is handled when you use this website.",
+        "h3_ResponsibleforDataProcessing": "1. Who is Responsible for Data Processing?",
+        "text_ResponsibleforDataProcessing": "The data controller for this website is:<br><br>Name: Marco Gollmer<br>Email: <a href='mailto:Marco.Gollmer&#64;outlook.de'>Marco.Gollmer&#64;outlook.de</a><br><br>If you have any questions regarding this Privacy Policy, please feel free to contact me via email.",
+        "h3_WhichDataCollected": "2. What Data is Collected?",
+        "text_WhichDataCollected": "This website does not collect or store any personal data. If you contact me via email, I will process the information you provide, such as:",
+        "Data_WhichDataCollected": "<li>Your name</li><li>Your email address</li><li>The content of your message</li>",
+        "h3_DataHandling": "3. Purpose of Data Handling",
+        "text_DataHandling": "The information you provide via email is used solely for responding to your inquiries. I do not use your data for marketing purposes or share it with third parties.",
+        "h3_LegalBasisForDataProcessing": "4. Legal Basis for Data Processing",
+        "text_LegalBasisForDataProcessing": "The processing of your personal data is based on the following legal grounds:<br> Consent: By contacting me via email, you consent to the processing of the data you provide.",
+        "h3_DataProtected": "5. How is Your Data Protected?",
+        "text_DataProtected": "I take appropriate technical and organizational measures to protect your personal data from unauthorized access, loss, or misuse. However, no method of data transmission or storage is completely secure, and I cannot guarantee absolute security.",
+        "h3_DataRetention": "6. Data Retention",
+        "text_DataRetention": "I do not store any data on this website. Email inquiries will be deleted once they are no longer needed.",
+        "h3_YourRights": "7. Your Rights",
+        "text_YourRights": "You have the following rights concerning your personal data:",
+        "listItems_YourRights": "<li><b>Right to Access: </b> You can request information about the data I hold about you.</li><li><b>Right to Rectification:</b> You can request that incorrect or incomplete data be corrected.</li><li><b>Right to Erasure:</b> You can request the deletion of your data, provided there are no legal obligations to retain it.</li><li><b>Right to Restrict Processing:</b> You can request that the processing of your data be limited.</li><li><b>Right to Object:</b> You can object to the processing of your data in certain circumstances.</li>",
+        "h3_CookiesTracking": "8. Cookies and Tracking",
+        "text_CookiesTracking": "This website does not use cookies or tracking technologies.",
+        "h3_ThirdPartyServices": "9. Third-Party Services",
+        "text_ThirdPartyServices": "This website does not use third-party services that process personal data (e.g., analytics tools, embedded social media plugins, etc.).",
+        "h3_ChangesToThisPrivacyPolicy": "10. Changes to this Privacy Policy",
+        "text_ChangesToThisPrivacyPolicy": "I reserve the right to update this Privacy Policy as needed. Any changes will be published on this page with an updated effective date. Thank you for visiting my website. If you have any questions about this Privacy Policy, please do not hesitate to reach out.",
         "backBtn": "Back"
     }
 }

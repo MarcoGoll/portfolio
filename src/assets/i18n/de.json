@@ -62,6 +62,31 @@
         "backBtn": "Zurück"
     },
     "privacyPolicy": {
+        "h2": "Datenschutzerklärung",
+        "effectiveDate": "Datum des Inkrafttretens: 01.01.2025",
+        "introductionText": "Vielen Dank, dass Sie meine Portfolio-Website besuchen. Der Schutz Ihrer persönlichen Daten ist für mich sehr wichtig. In dieser Datenschutzerklärung wird dargelegt, wie Ihre Daten bei der Nutzung dieser Website behandelt werden.",
+        "h3_ResponsibleforDataProcessing": "1. Wer ist für die Datenverarbeitung verantwortlich?",
+        "text_ResponsibleforDataProcessing": "Der für die Datenverarbeitung Verantwortliche für diese Website ist:<br><br>Name: Marco Gollmer<br>Email: <a href='mailto:kontakt&#64;marcogollmer.de'>kontakt&#64;marcogollmer.de</a><br><br>Wenn Sie Fragen zu dieser Datenschutzerklärung haben, können Sie mich gerne per E-Mail kontaktieren.",
+        "h3_WhichDataCollected": "2. Welche Daten werden gesammelt??",
+        "text_WhichDataCollected": "Auf dieser Website werden keine persönlichen Daten gesammelt oder gespeichert. Wenn Sie mich per E-Mail kontaktieren, verarbeite ich die von Ihnen angegebenen Informationen, wie z. B.:",
+        "Data_WhichDataCollected": "<li>Ihren Namen</li><li>Ihre E-Mail-Adresse</li><li>Den Inhalt Ihrer Nachricht</li>",
+        "h3_DataHandling": "3. Zweck der Datenverarbeitung",
+        "text_DataHandling": "Die von Ihnen per E-Mail übermittelten Informationen werden ausschließlich zur Beantwortung Ihrer Anfragen verwendet. Ich verwende Ihre Daten nicht für Marketingzwecke und gebe sie nicht an Dritte weiter.",
+        "h3_LegalBasisForDataProcessing": "4. Rechtsgrundlage für die Datenverarbeitung",
+        "text_LegalBasisForDataProcessing": "Die Verarbeitung Ihrer personenbezogenen Daten beruht auf den folgenden Rechtsgrundlagen:<br> Einwilligung: Indem Sie mit mir per E-Mail Kontakt aufnehmen, willigen Sie in die Verarbeitung der von Ihnen angegebenen Daten ein.",
+        "h3_DataProtected": "5. Wie werden Ihre Daten geschützt?",
+        "text_DataProtected": "Ich treffe angemessene technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen. Allerdings ist keine Methode der Datenübertragung oder -speicherung vollkommen sicher, und ich kann keine absolute Sicherheit garantieren.",
+        "h3_DataRetention": "6. Aufbewahrung von Daten",
+        "text_DataRetention": "Ich speichere keine Daten auf dieser Website. E-Mail-Anfragen werden gelöscht, sobald sie nicht mehr benötigt werden.",
+        "h3_YourRights": "7. Ihre Rechte",
+        "text_YourRights": "Sie haben die folgenden Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "listItems_YourRights": "<li><b>Recht auf Zugang: </b> Sie können Auskunft über die von mir über Sie gespeicherten Daten verlangen.</li><li><b>Recht auf Berichtigung:</b> Sie können beantragen, dass unrichtige oder unvollständige Daten berichtigt werden.</li><li><b>Recht auf Löschung:</b> Sie können die Löschung Ihrer Daten beantragen, sofern keine rechtlichen Verpflichtungen zur Aufbewahrung bestehen.</li><li><b>Recht auf Einschränkung der Verarbeitung:</b> Sie können beantragen, dass die Verarbeitung Ihrer Daten eingeschränkt wird.</li><li><b>Recht auf Widerspruch:</b> Sie können der Verarbeitung Ihrer Daten unter bestimmten Umständen widersprechen.</li>",
+        "h3_CookiesTracking": "8. Cookies und Tracking",
+        "text_CookiesTracking": "Diese Website verwendet keine Cookies oder Tracking-Technologien.",
+        "h3_ThirdPartyServices": "9. Dienstleistungen von Drittanbietern",
+        "text_ThirdPartyServices": "Diese Website nutzt keine Dienste Dritter, die personenbezogene Daten verarbeiten (z. B. Analysetools, eingebettete Social-Media-Plugins usw.).",
+        "h3_ChangesToThisPrivacyPolicy": "10. Änderungen an dieser Datenschutzerklärung",
+        "text_ChangesToThisPrivacyPolicy": "Ich behalte mir das Recht vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Alle Änderungen werden auf dieser Seite mit einem aktualisierten Gültigkeitsdatum veröffentlicht. Ich danke Ihnen für Ihren Besuch auf meiner Website. Wenn Sie Fragen zu dieser Datenschutzerklärung haben, zögern Sie bitte nicht, mich zu kontaktieren.",
         "backBtn": "Zurück"
     }
 }
