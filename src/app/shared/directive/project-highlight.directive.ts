@@ -9,16 +9,25 @@ export class ProjectHighlightDirective {
 
   constructor(private el: ElementRef) { }
 
+  /**
+  * Handles the mouse enter event.
+  */
   @HostListener('mouseenter') onMouseEnter() {
     if (window.innerWidth > 1023) {
       this.removeDnone();
     }
   }
 
+  /**
+  * Handles the mouse leave event.
+  */
   @HostListener('mouseleave') onMouseLeave() {
     this.addDnone();
   }
 
+  /**
+  * Removes the "d_none" class from child elements and applies a transform effect to the first child.
+  */
   private removeDnone() {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {
@@ -30,6 +39,9 @@ export class ProjectHighlightDirective {
     }
   }
 
+  /**
+  * Adds the "d_none" class to child elements and resets the transform effect on the first child.
+  */
   private addDnone() {
     for (let i = 0; i < this.el.nativeElement.children.length; i++) {
       if (i == 0) {

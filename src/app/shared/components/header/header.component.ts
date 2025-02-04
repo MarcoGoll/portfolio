@@ -30,10 +30,17 @@ export class HeaderComponent {
 
   constructor(private elRef: ElementRef, private renderer: Renderer2, private translate: TranslateService) { }
 
+  /**
+  * Toggles the state of the hamburger menu.
+  * Controlling whether the hamburger menu is open or closed.
+  */
   toggleHamburger() {
     this.isHamburgerOpen = !this.isHamburgerOpen;
   }
 
+  /**
+  * Toggles between the German and English language settings.
+  */
   setLanguage() {
     if (!this.isCheckboxLanguageChecked) {
       this.isCheckboxLanguageChecked = true;
@@ -46,6 +53,11 @@ export class HeaderComponent {
     }
   }
 
+  /**
+  * Changes the language based on the checkbox value.
+  * 
+  * @param {true | false} value - The desired state of the language checkbox, where `true` represents German and `false` represents English.
+  */
   changeLanguageCheckboxTo(value: true | false) {
     if ((this.currentLanguage === "en" && value == false) || (this.currentLanguage === "de" && value == true)) {
     } else {

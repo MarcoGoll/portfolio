@@ -12,14 +12,23 @@ export class ParentFirstChildLeftRightDirective {
 
   constructor(private el: ElementRef) { }
 
+  /**
+  * Handles the mouse enter event.
+  */
   @HostListener('mouseenter') onMouseEnter() {
     this.slideIn();
   }
 
+  /**
+  * Handles the mouse leave event.
+  */
   @HostListener('mouseleave') onMouseLeave() {
     this.slideOut();
   }
 
+  /**
+  * Initiates a sliding-in animation by increasing the width of the element.
+  */
   private slideIn() {
     clearInterval(this.interValIDSlideOut);
 
@@ -32,6 +41,9 @@ export class ParentFirstChildLeftRightDirective {
 
   }
 
+  /**
+  * Initiates a sliding-out animation by decreasing the width of the element.
+  */
   private slideOut() {
     clearInterval(this.interValIDSlideIn);
 

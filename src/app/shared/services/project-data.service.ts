@@ -121,6 +121,11 @@ export class ProjectDataService {
   }
   ];
 
+  /**
+  * Changes the language of the application and updates the projects array accordingly.
+  * 
+  * @param { "en" | "de" } value - The language to switch to. Can be either `"en"` for English or `"de"` for German.
+  */
   changeLanguageTo(value: "en" | "de") {
     this.currentLanguage = value;
     this.translate.use(this.currentLanguage);

@@ -48,7 +48,6 @@
     @include setFlex($fd: column, $ai: flex-start, $gap: 24px);
 }
 
-//TODO: one Class small an tall (and then work with [ngclass])
 .fadeInLeftRightContainer {
     width: 150px;
     overflow: hidden;

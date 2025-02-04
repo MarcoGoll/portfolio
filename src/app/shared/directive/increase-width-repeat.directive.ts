@@ -13,6 +13,14 @@ export class IncreaseWidthRepeatDirective {
     this.slide();
   }
 
+  /**
+  * Controls the sliding animation of the element.
+  * 
+  * This method uses a `setInterval` to gradually increase or decrease the width of the element. 
+  * It checks if the width is less than the width of the first child and increases it in steps of 10 pixels until the target width is reached. 
+  * After that, it waits for 2 seconds before starting to decrease the width again, until the width reaches 0.
+  * It uses the `isIncreaseDone` flag to alternate between increasing and decreasing the width.
+  */
   private slide() {
     setInterval(() => {
       if (this.width < this.el.nativeElement.firstChild.width && !(this.isIncreaseDone)) {
@@ -34,7 +42,6 @@ export class IncreaseWidthRepeatDirective {
         }
       }
     }, 10)
-
   }
 
 }

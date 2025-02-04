@@ -47,6 +47,13 @@ export class ContactMeSectionComponent {
 
   constructor(private translate: TranslateService) { }
 
+  /**
+  * Handles the form submission process.
+  * After submission, it resets the form and updates 
+  * confirmation states.
+  * 
+  * @param {NgForm} ngForm - The form instance being submitted.
+  */
   onSubmit(ngForm: NgForm) {
     this.isHintNecessary = true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -73,6 +80,9 @@ export class ContactMeSectionComponent {
     }
   }
 
+  /**
+  * Toggles the acceptance state of the privacy policy.
+  */
   toggleAcceptanceOfPrivacyPolicy() {
     this.isAcceptedPrivacyPolicy = !this.isAcceptedPrivacyPolicy;
     this.isHintNecessary = true;

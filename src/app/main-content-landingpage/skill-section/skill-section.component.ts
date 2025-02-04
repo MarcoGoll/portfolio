@@ -16,6 +16,9 @@ export class SkillSectionComponent {
   isAnimationstarted: boolean = false;
   constructor(private translate: TranslateService) { }
 
+  /**
+  * Starts the interest animation
+  */
   startInterestAnimation() {
     this.isAnimationstarted = true;
   }

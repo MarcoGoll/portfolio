@@ -8,12 +8,10 @@ export class GoTopDirective {
 
   constructor(private el: ElementRef) { }
 
-
   /**
-* Initialise scrollFunction() at window event onscroll
-*/
-  @HostListener('window:scroll', ['$event']) // for window scroll events
-  onScroll() {
+  * Initialise scrollFunction() at window event onscroll
+  */
+  @HostListener('window:scroll', ['$event']) onScroll() {
     this.scrollFunction();
   }
 

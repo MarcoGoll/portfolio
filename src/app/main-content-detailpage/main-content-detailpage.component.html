@@ -1,6 +1,5 @@
 <section id="detailsSection">
     <div id="detailsSectionContent" class="contentLimit">
-        <!-- TODO: Better Solution! Two 1:1 forloops for different arrays -->
         @for (project of projectData.currentProjectsArray; track $index) {
         @if(project.id == urlID){
         <div class="goBackContainer">
