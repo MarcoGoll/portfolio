@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
 import { ContactMeSectionComponent } from './contact-me-section/contact-me-section.component';
 import { FeedbackSectionComponent } from './feedback-section/feedback-section.component';
@@ -7,6 +7,7 @@ import { ProjectsOverviewSectionComponent } from './projects-overview-section/pr
 import { SkillSectionComponent } from './skill-section/skill-section.component';
 import { HeaderComponent } from "../shared/components/header/header.component";
 import { FooterComponent } from "../shared/components/footer/footer.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-content-landingpage',
@@ -24,6 +25,17 @@ import { FooterComponent } from "../shared/components/footer/footer.component";
   templateUrl: './main-content-landingpage.component.html',
   styleUrl: './main-content-landingpage.component.scss'
 })
-export class MainContentLandingpageComponent {
+export class MainContentLandingpageComponent implements OnInit {
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
+  ngOnInit() {
+    this.activatedRoute.fragment.subscribe((fragment: string | null) => {
+      if (fragment) this.jumpToSection(fragment);
+    });
+  }
+
+  jumpToSection(section: string | null) {
+    if (section) document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

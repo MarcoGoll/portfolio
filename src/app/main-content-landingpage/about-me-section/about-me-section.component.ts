@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IncreaseWidthRepeatDirective } from '../../shared/directive/increase-width-repeat.directive';
 import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about-me-section',
@@ -8,7 +9,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
   imports: [
     IncreaseWidthRepeatDirective,
     TranslatePipe,
-    TranslateDirective],
+    TranslateDirective, RouterLink],
   templateUrl: './about-me-section.component.html',
   styleUrls: ['./about-me-section.component.scss', './about-me-section.responsive.scss']
 })

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
   TranslateService,
@@ -19,7 +19,7 @@ export class AppComponent {
   title = 'portfolio';
 
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
