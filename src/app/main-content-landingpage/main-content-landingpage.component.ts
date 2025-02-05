@@ -7,7 +7,7 @@ import { ProjectsOverviewSectionComponent } from './projects-overview-section/pr
 import { SkillSectionComponent } from './skill-section/skill-section.component';
 import { HeaderComponent } from "../shared/components/header/header.component";
 import { FooterComponent } from "../shared/components/footer/footer.component";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-content-landingpage',
@@ -26,11 +26,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './main-content-landingpage.component.scss'
 })
 export class MainContentLandingpageComponent implements OnInit {
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
     this.activatedRoute.fragment.subscribe((fragment: string | null) => {
+      this.router.navigate([], { fragment: '', queryParamsHandling: 'preserve' });
       if (fragment) this.jumpToSection(fragment);
     });
   }
