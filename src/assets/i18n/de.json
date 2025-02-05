@@ -24,6 +24,20 @@
         "clickMe": "Klick mich",
         "interestText": "Gerne würde ich diese Frameworks lernen:"
     },
+    "feedbackSection": {
+        "introductionText": "IHRE WORTE",
+        "h2": "Feedback von Kollegen",
+        "feedbackText1": "Karl: GREAT, GREATER, AM Greta",
+        "name1": "1. Tobias Lange",
+        "position1": "Frontend Developer",
+        "feedbackText2": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+        "name2": "2. Tobias Lange",
+        "position2": "Frontend Developer",
+        "feedbackText3": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+        "name3": "3. Tobias Lange",
+        "position3": "Frontend Developer",
+        "profile": "Profile"
+    },
     "products": {
         "introductionText": "MEIN HANDWERK",
         "h2": "Projekte",
