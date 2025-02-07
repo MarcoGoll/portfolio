@@ -36,7 +36,11 @@ export class MainContentLandingpageComponent implements OnInit {
     });
   }
 
-  jumpToSection(section: string | null) {
-    if (section) document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  jumpToSection(section: string) {
+    if (section != '') {
+      setTimeout(() => {
+        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+      }, 5)
+    }
   }
 }
