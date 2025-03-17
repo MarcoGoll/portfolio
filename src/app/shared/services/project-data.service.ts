@@ -16,7 +16,7 @@ export class ProjectDataService {
     {
       id: 'join',
       index: 0,
-      projectImg: './assets/images/laptop.png',
+      projectImg: './assets/images/join.png',
       name: 'Join',
       description:
         'Join is a web-based business application for task management that enables simple and efficient organisation of tasks and contacts.',
@@ -114,7 +114,7 @@ export class ProjectDataService {
     {
       id: 'join',
       index: 0,
-      projectImg: './assets/images/laptop.png',
+      projectImg: './assets/images/join.png',
       name: 'Join',
       description:
         'Join ist eine webbasierte Business Anwendung für Task-Management, die eine einfache und effiziente Organisation von Aufgaben und Kontakten ermöglicht.',
