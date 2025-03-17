@@ -46,7 +46,9 @@
         "description": "Beschreibung",
         "implementationDetails": "Details zur Implementierung",
         "duration": "Entwicklungszeit",
-        "nextProject": "Nächstes Projekt"
+        "nextProject": "Nächstes Projekt",
+        "btnLive":"Live Test",
+        "btnDetails":"Projektdetails"
     },
     "contactMeSection": {
         "introductionText": "KONTAKT AUFNEHMEN",

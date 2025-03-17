@@ -32,7 +32,9 @@
         "description": "Description",
         "implementationDetails": "Implementation Details",
         "duration": "Duration",
-        "nextProject": "Next Project"
+        "nextProject": "Next Project",
+        "btnLive":"Live test",
+        "btnDetails":"Project details"
     },
     "feedbackSection": {
         "introductionText": "IN THEIR WORDS",

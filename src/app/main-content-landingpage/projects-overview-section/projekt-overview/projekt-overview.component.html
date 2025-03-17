@@ -7,14 +7,18 @@
     <div appProjectHighlight class="imageContainer">
         <a [routerLink]="['/detail',project.id]"><img class="projectImg"
                 [ngClass]="{'animatedIMG':project.featuredProject}" src={{project.projectImg}} alt=""></a>
-        <a href={{project.linkLive}} target="_blank" class="cta abtn liveBtnInImage d_none">Live test</a>
-        <a [routerLink]="['/detail',project.id]" class="btnDefault abtn detailsBtnInImage d_none">Project
-            details</a>
+        <a href={{project.linkLive}} target="_blank" class="cta abtn liveBtnInImage d_none">{{'products.btnLive' |
+            translate}}</a>
+        <a [routerLink]="['/detail',project.id]"
+            class="btnDefault abtn detailsBtnInImage d_none">{{'products.btnDetails' |
+            translate}}</a>
     </div>
     <h3 class="projectHeadline"> {{project.name}}</h3>
     <p class="projectDescription"> {{project.implementationDetails}}</p>
     <div class="btnContainer">
-        <a href={{project.linkLive}} target="_blank" class="btnBlack abtn liveBtnUnderImage">Live test</a>
-        <a [routerLink]="['/detail',project.id]" class="btnBlack abtn liveBtnUnderImage">Project details</a>
+        <a href={{project.linkLive}} target="_blank" class="btnBlack abtn liveBtnUnderImage">{{'products.btnLive' |
+            translate}}</a>
+        <a [routerLink]="['/detail',project.id]" class="btnBlack abtn liveBtnUnderImage">{{'products.btnDetails' |
+            translate}}</a>
     </div>
 </div>
