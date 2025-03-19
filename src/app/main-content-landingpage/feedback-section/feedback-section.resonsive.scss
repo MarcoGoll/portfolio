@@ -13,12 +13,14 @@
         flex-direction: column;
         height: auto;
 
-
         .feedbackContainer {
             position: static;
             gap: 48px;
             width: 90%;
             height: auto;
-        }
+        }        
+    }
+    .feedbackText {
+        font-size: 16px;
     }
 }
