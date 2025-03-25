@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 #heroSection {
-    height: 100vh;
+    height: 100dvh;
     min-height: 750px;
     background-image: url('./../../../assets/images/01_Background/all/isolatedPaperRips.jpg');
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .heroMainArea {
-    margin-top: 10vh;
+    margin-top: 10dvh;
     position: relative;
     width: 900px;
     height: 500px;

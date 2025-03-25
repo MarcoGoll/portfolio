@@ -1,7 +1,7 @@
 @import './../../styles.scss';
 
 #impressumSection {
-    height: 100vh;
+    height: 100dvh;
     @include setFlex($ai: flex-start);
     background-image: url('./../../../src/assets/images/01_Background/all/isolatedPaperRips.jpg');
     background-repeat: no-repeat;
