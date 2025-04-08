@@ -12,13 +12,7 @@ import {
 @Component({
   selector: 'app-projekt-overview',
   standalone: true,
-  imports: [
-    ProjectHighlightDirective,
-    RouterLink,
-    CommonModule,
-    TranslatePipe,
-    TranslateDirective,
-  ],
+  imports: [ProjectHighlightDirective, RouterLink, CommonModule, TranslatePipe],
   templateUrl: './projekt-overview.component.html',
   styleUrls: [
     './projekt-overview.component.scss',

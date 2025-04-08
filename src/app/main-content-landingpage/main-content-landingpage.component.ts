@@ -5,8 +5,7 @@ import { FeedbackSectionComponent } from './feedback-section/feedback-section.co
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { ProjectsOverviewSectionComponent } from './projects-overview-section/projects-overview-section.component';
 import { SkillSectionComponent } from './skill-section/skill-section.component';
-import { HeaderComponent } from "../shared/components/header/header.component";
-import { FooterComponent } from "../shared/components/footer/footer.component";
+import { FooterComponent } from '../shared/components/footer/footer.component';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -19,19 +18,20 @@ import { ActivatedRoute, Router } from '@angular/router';
     HeroSectionComponent,
     ProjectsOverviewSectionComponent,
     SkillSectionComponent,
-    HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './main-content-landingpage.component.html',
-  styleUrl: './main-content-landingpage.component.scss'
+  styleUrl: './main-content-landingpage.component.scss',
 })
 export class MainContentLandingpageComponent implements OnInit {
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
-  }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.activatedRoute.fragment.subscribe((fragment: string | null) => {
-      this.router.navigate([], { fragment: '', queryParamsHandling: 'preserve' });
+      this.router.navigate([], {
+        fragment: '',
+        queryParamsHandling: 'preserve',
+      });
       if (fragment) this.jumpToSection(fragment);
     });
   }
@@ -39,8 +39,10 @@ export class MainContentLandingpageComponent implements OnInit {
   jumpToSection(section: string) {
     if (section != '') {
       setTimeout(() => {
-        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-      }, 5)
+        document
+          .getElementById(section)
+          ?.scrollIntoView({ behavior: 'smooth' });
+      }, 5);
     }
   }
 }

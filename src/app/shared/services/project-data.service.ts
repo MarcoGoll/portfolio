@@ -186,7 +186,7 @@ export class ProjectDataService {
         'Dieses Pokédex-Projekt ist eine Webanwendung, mit der Benutzer detaillierte Informationen über Pokémon erforschen können. Es wurde mit JavaScript, HTML und CSS erstellt, holt Daten dynamisch ab und präsentiert sie in einer interaktiven und benutzerfreundlichen Oberfläche.',
       implementationDetails:
         'Dieses Projekt konzentriert sich auf die Verwendung von JavaScript und REST-APIs und zeigt, wie man Daten von externen APIs dynamisch abruft, verarbeitet und anzeigt.',
-      duration: '2 Weeks',
+      duration: '2 Wochen',
       techniques: [
         {
           techniqueImg: './assets/images/04_Icons/HTML.svg',
