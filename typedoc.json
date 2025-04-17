@@ -1,0 +1,7 @@
+{
+    "entryPoints": ["src/app"],   // Pfad zu deinen Komponenten
+    "out": "docs",                // Ausgabeordner für die HTML-Doku
+    "exclude": ["**/*.spec.ts"],  // Testdateien ausschließen
+    "includeVersion": true,       // Versionsnummer anzeigen
+    "tsconfig": "tsconfig.app.json" // oder dein tsconfig-Pfad
+  }
